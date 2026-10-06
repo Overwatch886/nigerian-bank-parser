@@ -164,6 +164,34 @@ def test_classifier_internal_transfer():
     assert result_tx.type == "Transfer-Out"
     assert cat.main_category == "Transfer"
 
+def test_classifier_does_not_treat_external_bank_as_internal_transfer():
+    tx = ParsedTransaction(
+        date="2025-08-08",
+        account="Kuda Bank Account",
+        amount=20000.0,
+        type="Expense",
+        description="outward Hamid Akinwumi payment for laptop transfer Akinrodolu/9032783996/Opay Digital Services Limited",
+    )
+
+    result_tx, cat = categorize_transaction(tx, client=None)
+
+    assert result_tx.type == "Expense"
+    assert cat.main_category == "Other"
+
+def test_classifier_recognizes_known_personal_account_transfer():
+    tx = ParsedTransaction(
+        date="2025-08-01",
+        account="Kuda Bank Account",
+        amount=53860.0,
+        type="Expense",
+        description="mobile trf to kmf transfer Olawuyi/1930839340/Access Bank of funds between personal accts",
+    )
+
+    result_tx, cat = categorize_transaction(tx, client=None)
+
+    assert result_tx.type == "Transfer-Out"
+    assert cat.main_category == "Transfer"
+
 def test_classifier_uses_other_for_unknown_model_category():
     client_mock = MagicMock()
     client_mock.models.generate_content.return_value.parsed = CategoryResult(

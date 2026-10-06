@@ -53,6 +53,15 @@ LOCAL_MODEL_START_SCRIPT = os.environ.get(
 LOCAL_MODEL_STARTUP_TIMEOUT = float(os.environ.get("LOCAL_MODEL_STARTUP_TIMEOUT", "30"))
 _LOCAL_MODEL_UNAVAILABLE = False
 
+PERSONAL_ACCOUNT_IDENTIFIERS = tuple(
+    identifier.strip().lower()
+    for identifier in os.environ.get(
+        "PERSONAL_ACCOUNT_IDENTIFIERS",
+        "1930839340,1871083781,8161428643,0438636853,8071126572,9165126149",
+    ).split(",")
+    if identifier.strip()
+)
+
 class CategoryResult(BaseModel):
     main_category: str
     sub_category: str
@@ -236,6 +245,17 @@ def _categorize_with_local_model(tx: ParsedTransaction) -> Optional[CategoryResu
         )
         return None
 
+def _is_internal_transfer(description: str) -> bool:
+    desc_lower = description.lower()
+    explicit_personal_transfer = (
+        "transfer of funds between personal" in desc_lower
+        or "between personal accounts" in desc_lower
+        or "personal accts" in desc_lower
+    )
+    return explicit_personal_transfer or any(
+        identifier in desc_lower for identifier in PERSONAL_ACCOUNT_IDENTIFIERS
+    )
+
 def categorize_transaction(tx: ParsedTransaction, client: Optional['genai.Client'] = None) -> Tuple[ParsedTransaction, CategoryResult]:
     # Detect internal transfer heuristics from descriptions
     # Based on instructions: detect transfers between user's accounts (Access, Kuda, OPay).
@@ -243,13 +263,8 @@ def categorize_transaction(tx: ParsedTransaction, client: Optional['genai.Client
 
     desc_lower = tx.description.lower()
 
-    # Check if transfer involves typical banks used by the user
-    bank_keywords = ["access", "kuda", "opay", "palmpay", "wema"]
-
-    if 'transfer' in desc_lower:
-        if any(bank in desc_lower for bank in bank_keywords) or 'transfer of funds between personal' in desc_lower:
-             # Just a simple heuristic for cross-account
-             is_internal = True
+    if "transfer" in desc_lower:
+        is_internal = _is_internal_transfer(tx.description)
 
     if is_internal:
         tx.type = "Transfer-Out"

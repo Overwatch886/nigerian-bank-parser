@@ -67,6 +67,7 @@ LOCAL_MODEL_NAME=granite-4.0-h-tiny
 LOCAL_MODEL_TIMEOUT=30
 LOCAL_MODEL_START_SCRIPT=C:\developer\scripts\run_granite.bat
 LOCAL_MODEL_STARTUP_TIMEOUT=30
+PERSONAL_ACCOUNT_IDENTIFIERS=1930839340,1871083781,8161428643,0438636853,8071126572,9165126149
 ```
 
 The Granite launcher at `C:\developer\scripts\run_granite.bat` starts the
@@ -76,6 +77,10 @@ server is not already running.
 The local model is tried after Gemini rotation and before regex rules. If the
 local endpoint fails, it is disabled for the rest of that run and the parser
 falls back to regex rules.
+Internal transfers are detected from explicit personal-account wording or these
+known account identifiers. Bank names alone are not treated as evidence of an
+internal transfer. Override `PERSONAL_ACCOUNT_IDENTIFIERS` when adding another
+personal account.
 
 ### Output
 The tool produces a tab-separated values (`.tsv`) file with the following headers:
