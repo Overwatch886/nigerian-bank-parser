@@ -1,9 +1,11 @@
 import pytest
 import os
 import csv
+import json
 from unittest.mock import MagicMock, patch
 
 from parser.ingest import ParsedTransaction, extract_kuda, extract_access, extract_opay, _standardize_date
+from parser import classifier
 from parser.classifier import categorize_transaction, CategoryResult, fallback_categorize, GENAI_AVAILABLE, GEMINI_MODELS
 if GENAI_AVAILABLE:
     from google.genai import errors
@@ -161,6 +163,33 @@ def test_classifier_internal_transfer():
 
     assert result_tx.type == "Transfer-Out"
     assert cat.main_category == "Transfer"
+
+def test_classifier_uses_enabled_local_model():
+    response = MagicMock()
+    response.__enter__.return_value = response
+    response.read.return_value = json.dumps({
+        "choices": [{
+            "message": {
+                "content": '{"main_category":"Food & Dining","sub_category":""}'
+            }
+        }]
+    }).encode("utf-8")
+    tx = ParsedTransaction(
+        date="2025/08/01",
+        account="Access",
+        amount=1000.0,
+        type="Expenses",
+        description="RESTAURANT PAYMENT",
+    )
+
+    with patch.object(classifier, "LOCAL_MODEL_ENABLED", True), \
+            patch.object(classifier.request, "urlopen", return_value=response) as urlopen:
+        result_tx, cat = categorize_transaction(tx, client=None)
+
+    assert result_tx.type == "Expenses"
+    assert cat.main_category == "Food & Dining"
+    payload = json.loads(urlopen.call_args.args[0].data.decode("utf-8"))
+    assert payload["model"] == classifier.LOCAL_MODEL_NAME
 
 def test_money_manager_format(tmp_path):
     output_path = tmp_path / "output.tsv"

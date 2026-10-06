@@ -1,6 +1,8 @@
 import re
 import os
 import sys
+import json
+from urllib import request
 from pydantic import BaseModel
 from typing import Optional, Tuple
 from parser.ingest import ParsedTransaction
@@ -24,6 +26,14 @@ GEMINI_MODELS = tuple(
     if model.strip()
 )
 GEMINI_MODEL = GEMINI_MODELS[0]
+LOCAL_MODEL_ENABLED = os.environ.get("LOCAL_MODEL_ENABLED", "").lower() in ("1", "true", "yes", "on")
+LOCAL_MODEL_ENDPOINT = os.environ.get(
+    "LOCAL_MODEL_ENDPOINT",
+    "http://127.0.0.1:8080/v1/chat/completions",
+)
+LOCAL_MODEL_NAME = os.environ.get("LOCAL_MODEL_NAME", "granite-4.0-h-tiny")
+LOCAL_MODEL_TIMEOUT = float(os.environ.get("LOCAL_MODEL_TIMEOUT", "30"))
+_LOCAL_MODEL_UNAVAILABLE = False
 
 class CategoryResult(BaseModel):
     main_category: str
@@ -72,6 +82,57 @@ def _exhausted_models(client: 'genai.Client') -> set[str]:
         exhausted = set()
         setattr(client, "_gemini_exhausted_models", exhausted)
     return exhausted
+
+def _local_model_prompt(tx: ParsedTransaction) -> str:
+    return f"""
+Categorize this Nigerian bank transaction into exactly one main category.
+Use only one of: Transport, Utilities & Airtime, Food & Dining, Groceries,
+Bank Charges, Shopping, Health, Entertainment, Income, Transfer, or Uncategorized.
+Return only valid JSON with this shape: {{"main_category": "...", "sub_category": "..."}}.
+Description: {tx.description}
+Amount: {tx.amount}
+Type: {tx.type}
+""".strip()
+
+def _categorize_with_local_model(tx: ParsedTransaction) -> Optional[CategoryResult]:
+    global _LOCAL_MODEL_UNAVAILABLE
+    if not LOCAL_MODEL_ENABLED or _LOCAL_MODEL_UNAVAILABLE:
+        return None
+
+    payload = json.dumps({
+        "model": LOCAL_MODEL_NAME,
+        "messages": [
+            {
+                "role": "user",
+                "content": _local_model_prompt(tx),
+            }
+        ],
+        "temperature": 0,
+        "response_format": {"type": "json_object"},
+    }).encode("utf-8")
+    http_request = request.Request(
+        LOCAL_MODEL_ENDPOINT,
+        data=payload,
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+
+    try:
+        with request.urlopen(http_request, timeout=LOCAL_MODEL_TIMEOUT) as response:
+            body = json.loads(response.read().decode("utf-8"))
+        content = body["choices"][0]["message"]["content"]
+        content = content.strip()
+        if content.startswith("```"):
+            content = re.sub(r"^```(?:json)?\s*|\s*```$", "", content, flags=re.IGNORECASE)
+        return CategoryResult.model_validate_json(content)
+    except Exception as exc:
+        _LOCAL_MODEL_UNAVAILABLE = True
+        print(
+            f"Warning: Local model {LOCAL_MODEL_NAME} is unavailable ({exc}). "
+            "Falling back to local rules.",
+            file=sys.stderr,
+        )
+        return None
 
 def categorize_transaction(tx: ParsedTransaction, client: Optional['genai.Client'] = None) -> Tuple[ParsedTransaction, CategoryResult]:
     # Detect internal transfer heuristics from descriptions
@@ -125,10 +186,11 @@ def categorize_transaction(tx: ParsedTransaction, client: Optional['genai.Client
                 if not _is_model_unavailable_error(e):
                     print(
                         f"Warning: Gemini categorization failed with {model} ({e}). "
-                        "Falling back to local rules.",
+                        "Trying the local model or rules.",
                         file=sys.stderr,
                     )
-                    return tx, fallback_categorize(tx.description)
+                    local_result = _categorize_with_local_model(tx)
+                    return tx, local_result or fallback_categorize(tx.description)
 
                 exhausted_models.add(model)
                 unavailable_models.append(model)
@@ -145,8 +207,9 @@ def categorize_transaction(tx: ParsedTransaction, client: Optional['genai.Client
                 f"while categorizing '{tx.description}'. Falling back to local rules.",
                 file=sys.stderr,
             )
-        return tx, fallback_categorize(tx.description)
+        local_result = _categorize_with_local_model(tx)
+        return tx, local_result or fallback_categorize(tx.description)
 
     else:
-        # Fallback completely
-        return tx, fallback_categorize(tx.description)
+        local_result = _categorize_with_local_model(tx)
+        return tx, local_result or fallback_categorize(tx.description)

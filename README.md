@@ -52,7 +52,20 @@ GEMINI_MODELS=gemini-3.5-flash-lite,gemini-3.1-flash-lite,gemini-2.5-flash-lite,
 
 These environment settings belong in the `.env` file at the repository root
 (the same directory as `main.py`). The optional local-model settings described
-in future configuration should go in this file as well.
+below also go in this file:
+
+```env
+LOCAL_MODEL_ENABLED=true
+LOCAL_MODEL_ENDPOINT=http://127.0.0.1:8080/v1/chat/completions
+LOCAL_MODEL_NAME=granite-4.0-h-tiny
+LOCAL_MODEL_TIMEOUT=30
+```
+
+The Granite launcher at `C:\developer\scripts\run_granite.bat` starts the
+llama.cpp server used by these settings. Start it before running the parser.
+The local model is tried after Gemini rotation and before regex rules. If the
+local endpoint fails, it is disabled for the rest of that run and the parser
+falls back to regex rules.
 
 ### Output
 The tool produces a tab-separated values (`.tsv`) file with the following headers:
