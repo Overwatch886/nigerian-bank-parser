@@ -1,0 +1,4240 @@
+Spend Account
+Money In Money Out Opening Balance Closing Balance
+₦625,238.28 ₦608,215.53 ₦0.00 ₦17,022.75
+
+Date/Time Money In Money Out Category To/From Description Balance
+15/04/25
+12:08:13
+
+₦5,000.00 inward
+transfer
+
+Adebimpe Folashade
+Rafiat/0016136264/Gtbank Plc
+
+gift to olawuyi mobolaji
+israel.
+00001325041512071000
+0096364821
+
+₦5,000.00
+
+16/04/25
+17:52:34
+
+₦5,000.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/1930839340/Access Bank
+
+sent from kuda ₦0.00
+
+28/04/25
+16:18:08
+
+₦5,000.00 inward
+transfer
+
+Adebimpe Folashade
+Rafiat/0016136264/Gtbank Plc
+
+gift to olawuyi mobolaji
+israel.
+00001325042816172100
+0123742654
+
+₦5,000.00
+
+30/04/25
+07:20:12
+
+₦500.00 outward
+transfer
+
+Chidimma Mary
+Sunday/7068932095/Opay Digital
+Services Limited
+
+birthday gift ₦4,500.00
+
+30/04/25
+09:23:11
+
+₦10,000.00 inward
+transfer
+
+Sceed Barms/1027018010/United
+Bank For Africa
+
+kip:uba/sceed
+barms/mob/uto/olawuyi
+mobol/upkeep/
+
+₦14,500.00
+
+30/04/25
+09:23:11
+
+₦50.00 inward
+transfer
+
+Cbn//United Bank For Africa stamp duty on electronic
+funds transfer -
+2077782122
+
+₦14,450.00
+
+02/05/25
+21:24:45
+
+₦10,000.00 outward
+transfer
+
+Andromedatech/Olawuyi
+Emmanuel/9321901599/Wema Bank
+
+stocks ₦4,450.00
+
+04/05/25
+17:10:35
+
+₦100.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+sen ₦4,350.00
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 1 of 24
+
+11/05/25
+07:57:49
+
+₦4,350.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+transfer ₦0.00
+
+23/05/25
+17:52:24
+
+₦5,000.00 inward
+transfer
+
+Adebimpe Folashade
+Rafiat/0016136264/Gtbank Plc
+
+gift to olawuyi mobolaji
+israel.
+0000132505231750380
+00177003112
+
+₦5,000.00
+
+26/05/25
+09:19:33
+
+₦5,000.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+transfer ₦0.00
+
+27/05/25
+17:35:35
+
+₦10,000.00 local
+funds
+transfer
+
+sadiq ola
+adebimpe:8122622330
+
+₦10,000.00
+
+27/05/25
+19:00:28
+
+₦10,000.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+transfer ₦0.00
+
+18/06/25
+11:28:21
+
+₦8,000.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦8,000.00
+
+18/06/25
+11:29:54
+
+₦1,100.00 outward
+transfer
+
+Babajide James
+Oluokun/8067237160/Palmpay
+
+payment for printing ₦6,900.00
+
+18/06/25
+13:26:04
+
+₦200.00 outward
+transfer
+
+Oluwaseun Ayomide
+Alabi/7013571524/Opay Digital
+Services Limited
+
+printing ₦6,700.00
+
+19/06/25
+13:50:15
+
+₦4,000.00 outward
+transfer
+
+Olubukola Amoz
+Ariyo/8037398268/Opay Digital
+Services Limited
+
+workbook payment ₦2,700.00
+
+20/06/25
+15:07:28
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing thekozz ₦3,400.00
+
+20/06/25
+18:55:22
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing tengo ₦4,100.00
+
+21/06/25
+22:44:48
+
+₦750.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Moniepoint
+
+for food ₦3,350.00
+
+23/06/25
+20:26:11
+
+₦650.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+for food ₦2,700.00
+
+24/06/25
+10:48:59
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing ₦3,400.00
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 2 of 24
+
+25/06/25
+06:36:57
+
+₦300.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+for bread ₦3,100.00
+
+25/06/25
+19:02:43
+
+₦5,000.00 inward
+transfer
+
+Adebimpe Folashade
+Rafiat/0016136264/Gtbank Plc
+
+gift to olawuyi mobolaji
+israel.
+0000132506251902320
+00245869713
+
+₦8,100.00
+
+25/06/25
+20:06:47
+
+₦250.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦7,850.00
+
+26/06/25
+12:13:16
+
+₦983.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦8,833.00
+
+26/06/25
+13:57:22
+
+₦8,833.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+movement ₦0.00
+
+26/06/25
+15:16:29
+
+₦333.30 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦333.30
+
+26/06/25
+15:19:10
+
+₦130.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+snacks ₦203.30
+
+26/06/25
+16:08:58
+
+₦103.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+testing #103 ₦100.30
+
+26/06/25
+16:18:41
+
+₦100.00 local
+funds
+transfer
+
+emmanuel oladayo
+olawuyi:8161428643
+
+₦200.30
+
+26/06/25
+20:54:09
+
+₦200.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+garri ₦0.30
+
+27/06/25
+09:30:24
+
+₦14,000.00 inward
+transfer
+
+The Absolute Success
+Schools/4250099213/Ecobank Bank
+
+kip:eco/the absolute
+succe/ref03813768891
+bo the a
+
+₦14,000.30
+
+27/06/25
+09:30:24
+
+₦50.00 inward
+transfer
+
+Cbn//Ecobank Bank stamp duty on electronic
+funds transfer -
+2077782122
+
+₦13,950.30
+
+27/06/25
+12:43:02
+
+₦11,150.00 outward
+transfer
+
+Bamboo-Ola/6908573812/Moniepoint stocks investment ₦2,800.30
+
+27/06/25
+17:30:20
+
+₦2,800.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+feeding ₦0.30
+
+27/06/25
+17:40:06
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+kip:opay/anjolaoluwa
+blessi/app testing
+
+₦700.30
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 3 of 24
+
+29/06/25
+15:37:57
+
+₦400.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦300.30
+
+30/06/25
+06:48:39
+
+₦100.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+kip:opay/olayemi basirat
+os/transfer from olayemi
+
+₦400.30
+
+30/06/25
+06:49:28
+
+₦400.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦0.30
+
+30/06/25
+22:48:46
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+kip:opay/anjolaoluwa
+blessi/app testing
+
+₦700.30
+
+01/07/25
+18:45:49
+
+₦600.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦100.30
+
+03/07/25
+05:45:18
+
+₦10,000.00 inward
+transfer
+
+Sceed Barms/1027018010/United
+Bank For Africa
+
+kip:uba/sceed
+barms/mob/uto/olawuyi
+mobol/upkeep/
+
+₦10,100.30
+
+03/07/25
+05:45:18
+
+₦50.00 inward
+transfer
+
+Cbn//United Bank For Africa stamp duty on electronic
+funds transfer -
+2077782122
+
+₦10,050.30
+
+06/07/25
+18:20:14
+
+₦2,000.00 outward
+transfer
+
+Michael Olatunji
+Ogunwale/2000635820/Zenith Bank
+Plc
+
+miscellaneous ₦8,050.30
+
+16/07/25
+11:08:56
+
+₦650.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing dudik ₦8,700.30
+
+16/07/25
+11:47:13
+
+₦650.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+kip:opay/anjolaoluwa
+blessi/app testing canino
+
+₦9,350.30
+
+16/07/25
+12:25:44
+
+₦2,000.00 inward
+transfer
+
+Oseni Olayemi
+Basirat/0121310712/Wema Bank
+
+kip:wema/oseni olayemi
+basi/kuda-loan
+repayment
+
+₦11,350.30
+
+17/07/25
+12:00:05
+
+₦1,300.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing irush ₦12,650.30
+
+17/07/25
+12:26:44
+
+₦650.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing migo ₦13,300.30
+
+18/07/25
+09:58:19
+
+₦100.00 airtime airtime purchase
+2349165126149
+
+₦13,200.30
+
+21/07/25
+09:55:49
+
+₦6,000.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/1930839340/Access Bank
+
+funds for calculator
+purchase
+
+₦7,200.30
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 4 of 24
+
+21/07/25
+11:02:35
+
+₦2,000.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/1930839340/Access Bank
+
+funds for calculator ₦5,200.30
+
+21/07/25
+13:29:18
+
+₦250.00 outward
+transfer
+
+Olayemi Oseni/9165126149/Momo Psb phone & internet ₦4,950.30
+
+22/07/25
+17:03:01
+
+₦400.00 airtime airtime purchase
+2349165126149
+
+₦4,550.30
+
+24/07/25
+09:28:31
+
+₦515.00 airtime airtime purchase
+2349165126149
+
+₦4,035.30
+
+25/07/25
+10:12:04
+
+₦850.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+refunding money spent
+on data.
+
+₦3,185.30
+
+25/07/25
+12:20:51
+
+₦1,000.00 outward
+transfer
+
+Adamu Sani
+Muhammad/6112218127/Opay Digital
+Services Limited
+
+payment for mtn 1gb
+config
+
+₦2,185.30
+
+30/07/25
+07:45:36
+
+₦650.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+kip:opay/anjolaoluwa
+blessi/app testing canino
+2
+
+₦2,835.30
+
+30/07/25
+08:10:15
+
+₦650.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing canino 3 ₦3,485.30
+
+30/07/25
+08:18:20
+
+₦1,300.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+food ₦2,185.30
+
+30/07/25
+21:47:31
+
+₦5,000.00 inward
+transfer
+
+Adebimpe Folashade
+Rafiat/0016136264/Gtbank Plc
+
+gift to olawuyi mobolaji
+israel.
+0000132507302147200
+00318553971
+
+₦7,185.30
+
+01/08/25
+12:28:12
+
+₦300.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+food ₦6,885.30
+
+01/08/25
+15:26:16
+
+₦505.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦6,380.30
+
+01/08/25
+19:20:35
+
+₦10,000.00 inward
+transfer
+
+Sadiq Ola
+Adebimpe/8122622330/Paycom(Opay)
+
+transfer from sadiq ola
+adebimpe
+
+₦16,380.30
+
+01/08/25
+19:20:35
+
+₦50.00 inward
+transfer
+
+Cbn//Paycom(Opay) stamp duty on electronic
+funds transfer -
+2077782122
+
+₦16,330.30
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 5 of 24
+
+02/08/25
+07:57:00
+
+₦275.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦16,055.30
+
+03/08/25
+00:20:16
+
+₦8,000.00 outward
+transfer
+
+Afrinvest-
+Emm/6154400764/Moniepoint
+
+investment ₦8,055.30
+
+03/08/25
+20:49:14
+
+₦100.00 outward
+transfer
+
+Chairman Obadolowo
+David/9126467705/Opay Digital
+Services Limited
+
+cos101 flash drive
+contribution
+
+₦7,955.30
+
+05/08/25
+15:31:21
+
+₦1,000.00 outward
+transfer
+
+Oseni Olayemi
+Basirat/0121310712/Wema Bank
+
+bisola's money ₦6,955.30
+
+08/08/25
+10:16:07
+
+₦6,000.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+transfer ₦955.30
+
+08/08/25
+11:17:17
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing ninetie ₦1,655.30
+
+09/08/25
+19:37:05
+
+₦1,600.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦3,255.30
+
+11/08/25
+22:23:07
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing harrison ₦3,955.30
+
+14/08/25
+12:06:11
+
+₦3,500.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/1871083781/Access Bank
+
+transport ₦455.30
+
+21/08/25
+08:39:58
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing dmg ₦1,155.30
+
+21/08/25
+08:48:32
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing ola ₦1,855.30
+
+21/08/25
+08:56:19
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing valabi ₦2,555.30
+
+23/08/25
+09:30:27
+
+₦2,250.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/1871083781/Access Bank
+
+food ₦305.30
+
+25/08/25
+13:46:55
+
+₦305.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+loan repayment ₦0.30
+
+29/08/25
+10:37:37
+
+₦500.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦500.30
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 6 of 24
+
+29/08/25
+10:38:24
+
+₦500.00 outward
+transfer
+
+Ajibola Gbolahan
+Oyeniran/7057039108/Opay Digital
+Services Limited
+
+cbn cup ₦0.30
+
+02/09/25
+14:58:21
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing tomima ₦700.30
+
+04/09/25
+15:02:50
+
+₦10,000.00 local
+funds
+transfer
+
+sadiq ola
+adebimpe:8122622330
+
+₦10,700.30
+
+07/09/25
+16:07:26
+
+₦650.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦10,050.30
+
+08/09/25
+10:18:27
+
+₦500.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦9,550.30
+
+09/09/25
+19:57:50
+
+₦270.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦9,280.30
+
+11/09/25
+17:38:32
+
+₦325.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦8,955.30
+
+11/09/25
+22:16:58
+
+₦5,000.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+food ₦3,955.30
+
+13/09/25
+05:21:36
+
+₦650.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦3,305.30
+
+14/09/25
+19:03:22
+
+₦950.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦2,355.30
+
+19/09/25
+15:19:12
+
+₦595.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦1,760.30
+
+20/09/25
+18:23:07
+
+₦495.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦1,265.30
+
+21/09/25
+20:55:17
+
+₦550.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦715.30
+
+25/09/25
+21:38:11
+
+₦715.30 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+transfer ₦0.00
+
+26/09/25
+17:12:45
+
+₦5,000.00 inward
+transfer
+
+Adebimpe Folashade
+Rafiat/0016136264/Gtbank Plc
+
+gift to olawuyi mobolaji
+israel.
+00001325092617123500
+0439353816
+
+₦5,000.00
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 7 of 24
+
+30/09/25
+10:32:54
+
+₦4,000.00 outward
+transfer
+
+Nacoss U.I./1011535381/Zenith Bank
+Plc
+
+olawuyi israel mobolaji
+nacos dues
+
+₦1,000.00
+
+03/10/25
+06:45:02
+
+₦5,000.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦6,000.00
+
+05/10/25
+08:36:55
+
+₦2,100.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦3,900.00
+
+08/10/25
+09:18:43
+
+₦1,000.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+transfer ₦2,900.00
+
+09/10/25
+22:41:48
+
+₦1,000.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+transfer ₦1,900.00
+
+12/10/25
+16:11:14
+
+₦1,900.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+transfer ₦0.00
+
+19/10/25
+12:22:11
+
+₦8,000.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+kip:opay/olayemi basirat
+os/transfer from olayemi
+
+₦8,000.00
+
+24/10/25
+08:04:26
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing nniki ₦8,700.00
+
+24/10/25
+08:21:32
+
+₦700.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+transfer of funds ₦8,000.00
+
+24/10/25
+08:22:34
+
+₦700.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+transfer of funds ₦7,300.00
+
+24/10/25
+08:24:03
+
+₦700.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+personal transfer ₦8,000.00
+
+25/10/25
+19:29:49
+
+₦500.00 outward
+transfer
+
+Adijat Adenike
+Sadiku/8038475866/Opay Digital
+Services Limited
+
+food ₦7,500.00
+
+26/10/25
+16:13:45
+
+₦1,000.00 outward
+transfer
+
+Oseni Olayemi
+Basirat/0121310712/Wema Bank
+
+lent t mummy ₦6,500.00
+
+26/10/25
+16:14:43
+
+₦675.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦5,825.00
+
+27/10/25
+19:47:45
+
+₦500.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦5,325.00
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 8 of 24
+
+29/10/25
+07:45:17
+
+₦600.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+transfer ₦4,725.00
+
+29/10/25
+13:21:23
+
+₦5,000.00 inward
+transfer
+
+Adebimpe Folashade
+Rafiat/0016136264/Gtbank Plc
+
+gift to olawuyi mobolaji
+israel.
+000013251029132112000
+510877607
+
+₦9,725.00
+
+29/10/25
+22:12:56
+
+₦4,725.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+transfer of funds ₦5,000.00
+
+30/10/25
+11:59:45
+
+₦4,000.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦9,000.00
+
+30/10/25
+12:17:14
+
+₦1,100.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+miscellaneous ₦7,900.00
+
+30/10/25
+18:07:25
+
+₦370.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦7,530.00
+
+30/10/25
+22:19:44
+
+₦5,030.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/0438636853/Wema Bank
+
+transfer of funds ₦2,500.00
+
+31/10/25
+20:54:15
+
+₦2,500.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+transfer of funds ₦0.00
+
+14/11/25
+07:53:14
+
+₦10,315.00 local
+funds
+transfer
+
+emmanuel oladayo
+olawuyi:8161428643
+
+₦10,315.00
+
+14/11/25
+16:22:13
+
+₦740.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+miscellaneous ₦9,575.00
+
+14/11/25
+16:38:43
+
+₦3,000.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/1871083781/Access Bank
+
+miscellaneous ₦6,575.00
+
+16/11/25
+16:53:28
+
+₦600.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing jasol ₦7,175.00
+
+16/11/25
+17:16:22
+
+₦100.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+kip:opay/anjolaoluwa
+blessi/app testing jasol
+
+₦7,275.00
+
+16/11/25
+20:17:50
+
+₦550.00 outward
+transfer
+
+Pos Transfer - Mayowa
+Daramola/5460471307/Moniepoint
+
+food ₦6,725.00
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 9 of 24
+
+16/11/25
+21:01:33
+
+₦325.00 outward
+transfer
+
+Praise Pamilerin
+Okanlawon/7063193864/Opay Digital
+Services Limited
+
+miscellaneous ₦6,400.00
+
+16/11/25
+21:15:54
+
+₦350.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+miscellaneous ₦6,050.00
+
+18/11/25
+19:05:57
+
+₦400.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+miscellaneous ₦5,650.00
+
+19/11/25
+19:15:24
+
+₦100.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+food ₦5,550.00
+
+20/11/25
+16:53:58
+
+₦460.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+miscellaneous ₦5,090.00
+
+21/11/25
+07:27:53
+
+₦600.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+food ₦4,490.00
+
+21/11/25
+12:53:18
+
+₦500.00 outward
+transfer
+
+Pos Transfer- Monsurat Aina
+Salami/5812071636/Moniepoint
+
+miscellaneous ₦3,990.00
+
+21/11/25
+13:37:11
+
+₦200.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+miscellaneous ₦3,790.00
+
+21/11/25
+16:20:44
+
+₦2,000.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/1871083781/Access Bank
+
+food ₦1,790.00
+
+22/11/25
+16:45:09
+
+₦550.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+food ₦1,240.00
+
+22/11/25
+20:12:31
+
+₦5,000.00 inward
+transfer
+
+Adebimpe Folashade
+Rafiat/0016136264/Gtbank Plc
+
+gift to olawuyi mobolaji
+israel.
+00001325112220122000
+0564046819
+
+₦6,240.00
+
+23/11/25
+20:17:28
+
+₦600.00 outward
+transfer
+
+Pos Transfer - Mayowa
+Daramola/5460471307/Moniepoint
+
+miscellaneous ₦5,640.00
+
+23/11/25
+21:42:29
+
+₦4,055.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/0438636853/Wema Bank
+
+miscellaneous ₦1,585.00
+
+25/11/25
+10:21:13
+
+₦1,470.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+miscellaneous ₦115.00
+
+26/11/25
+15:34:07
+
+₦4,500.00 inward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/0438636853/Wema Bank
+
+kip:wema/emmanuel
+oladayo o/alat nip
+transfer to o
+
+₦4,615.00
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 10 of 24
+
+26/11/25
+15:45:10
+
+₦1,620.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+miscellaneous ₦2,995.00
+
+26/11/25
+16:34:36
+
+₦200.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦3,195.00
+
+28/11/25
+08:06:09
+
+₦600.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+food ₦2,595.00
+
+28/11/25
+08:09:58
+
+₦1,090.00 local
+funds
+transfer
+
+emmanuel oladayo
+olawuyi:8161428643
+
+₦3,685.00
+
+28/11/25
+11:46:48
+
+₦260.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+miscellaneous ₦3,425.00
+
+28/11/25
+11:47:18
+
+₦80.00 airtime airtime purchase
+2349165126149
+
+₦3,345.00
+
+28/11/25
+12:49:50
+
+₦500.00 outward
+transfer
+
+Pos Transfer- Monsurat Aina
+Salami/5812071636/Moniepoint
+
+miscellaneous ₦2,845.00
+
+28/11/25
+13:27:47
+
+₦200.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+miscellaneous ₦2,645.00
+
+28/11/25
+17:07:24
+
+₦2,000.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/0438636853/Wema Bank
+
+miscellaneous ₦645.00
+
+28/11/25
+17:40:23
+
+₦1,950.00 inward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/0438636853/Wema Bank
+
+kip:wema/emmanuel
+oladayo o/alat nip
+transfer to o
+
+₦2,595.00
+
+28/11/25
+17:43:53
+
+₦2,000.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/1871083781/Access Bank
+
+miscellaneous ₦595.00
+
+29/11/25
+07:46:39
+
+₦100.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦695.00
+
+29/11/25
+16:58:35
+
+₦260.00 outward
+transfer
+
+J.S.A Adekola Empire Venture
+/6140561815/Opay Digital Services
+Limited
+
+food ₦435.00
+
+29/11/25
+18:02:26
+
+₦400.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+miscellaneous ₦35.00
+
+30/11/25
+13:31:04
+
+₦1,515.00 local
+funds
+transfer
+
+emmanuel oladayo
+olawuyi:8161428643
+
+₦1,550.00
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 11 of 24
+
+01/12/25
+13:20:43
+
+₦2,000.00 inward
+transfer
+
+Jesutofarati Favour
+Amokeoja/7044943691/Paycom(Opay)
+
+transfer from jesutofarati
+favour amokeoja
+
+₦3,550.00
+
+01/12/25
+21:19:21
+
+₦9,900.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦13,450.00
+
+02/12/25
+03:15:57
+
+₦1,000.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦14,450.00
+
+03/12/25
+00:44:24
+
+₦2,300.00 outward
+transfer
+
+Israel Olawuyi/6179749580/9 Payment
+Service Bank
+
+sent ₦12,150.00
+
+03/12/25
+00:52:33
+
+₦7,700.00 outward
+transfer
+
+Israel Olawuyi/6179749580/9 Payment
+Service Bank
+
+send ₦4,450.00
+
+03/12/25
+01:02:26
+
+₦2,301.00 inward
+transfer
+
+Cardtonic/8889867405/Palmpay kip:pap/cardtonic/balanc
+e withdrawal from
+cardtoni
+
+₦6,751.00
+
+03/12/25
+15:21:44
+
+₦5,174.00 inward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/0438636853/Wema Bank
+
+kip:wema/emmanuel
+oladayo o/alat nip
+transfer to o
+
+₦11,925.00
+
+03/12/25
+15:39:39
+
+₦2,500.00 outward
+transfer
+
+Olayemi Oseni/9165126149/Momo Psb phone & internet ₦9,425.00
+
+04/12/25
+05:08:08
+
+₦6,523.00 inward
+transfer
+
+Gabsyn Microfinance Bank
+Limited/1305104958/Providus Bank
+
+kip:prov/gabsyn
+microfinanc/olawuyi,
+mobolaji isra
+
+₦15,948.00
+
+04/12/25
+05:08:48
+
+₦1,100.00 outward
+transfer
+
+Israel Olawuyi/8504532219/Gomoney phone & internet ₦14,848.00
+
+05/12/25
+15:57:06
+
+₦3,000.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/1930839340/Access Bank
+
+food ₦11,848.00
+
+05/12/25
+19:38:33
+
+₦200.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+miscellaneous ₦11,648.00
+
+05/12/25
+20:41:16
+
+₦550.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+miscellaneous ₦11,098.00
+
+06/12/25
+07:40:29
+
+₦3,750.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦14,848.00
+
+07/12/25
+07:44:00
+
+₦1,472.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦16,320.00
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 12 of 24
+
+07/12/25
+20:18:09
+
+₦550.00 outward
+transfer
+
+Lagbaja Creations
+Ventures/5460471307/Moniepoint
+
+food ₦15,770.00
+
+07/12/25
+21:57:14
+
+₦1,450.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+remainder of sister
+tofarati gift for feeding
+
+₦14,320.00
+
+09/12/25
+02:34:53
+
+₦75.00 airtime airtime purchase
+2349165126149
+
+₦14,245.00
+
+09/12/25
+15:25:26
+
+₦9,000.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+sending dad/mum funds ₦5,245.00
+
+09/12/25
+15:26:21
+
+₦3,450.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+dad and mum's funds ₦1,795.00
+
+09/12/25
+15:38:56
+
+₦3,034.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦4,829.00
+
+10/12/25
+08:21:32
+
+₦500.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+food ₦4,329.00
+
+10/12/25
+12:12:40
+
+₦460.00 local
+funds
+transfer
+
+emmanuel
+olawuyi:8161428643
+
+₦4,789.00
+
+11/12/25
+23:11:38
+
+₦620.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+food ₦4,169.00
+
+11/12/25
+23:19:45
+
+₦510.00 local
+funds
+transfer
+
+emmanuel oladayo
+olawuyi:8161428643
+
+₦4,679.00
+
+12/12/25
+17:32:55
+
+₦3,000.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/1871083781/Access Bank
+
+food ₦1,679.00
+
+12/12/25
+18:52:05
+
+₦100.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+food ₦1,579.00
+
+12/12/25
+19:00:50
+
+₦100.00 outward
+transfer
+
+Oluranti Elizabeth
+Akintola/8083752354/Opay Digital
+Services Limited
+
+miscellaneous ₦1,479.00
+
+12/12/25
+20:17:28
+
+₦850.00 local
+funds
+transfer
+
+food ₦2,329.00
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 13 of 24
+
+12/12/25
+20:24:42
+
+₦1,000.00 airtime airtime purchase
+2349165126149
+
+₦1,329.00
+
+13/12/25
+09:36:53
+
+₦500.00 outward
+transfer
+
+Pos Transfer- Monsurat Aina
+Salami/5812071636/Moniepoint
+
+miscellaneous ₦829.00
+
+13/12/25
+18:57:42
+
+₦160.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+beans ₦669.00
+
+13/12/25
+19:20:37
+
+₦500.00 outward
+transfer
+
+Olayemi Oseni/9165126149/Momo Psb phone & internet ₦169.00
+
+14/12/25
+21:53:45
+
+₦980.00 local
+funds
+transfer
+
+emmanuel oladayo
+olawuyi:8161428643
+
+₦1,149.00
+
+14/12/25
+21:57:16
+
+₦900.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+transfer ₦249.00
+
+14/12/25
+21:59:24
+
+₦5,000.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦5,249.00
+
+15/12/25
+19:46:36
+
+₦220.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+food ₦5,029.00
+
+17/12/25
+09:39:10
+
+₦300.00 outward
+transfer
+
+Titilayo Remilekun
+Akogun/7033749115/Opay Digital
+Services Limited
+
+miscellaneous ₦4,729.00
+
+17/12/25
+15:54:07
+
+₦320.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+food ₦4,409.00
+
+17/12/25
+21:35:37
+
+₦470.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+miscellaneous ₦3,939.00
+
+17/12/25
+21:43:45
+
+₦820.00 local
+funds
+transfer
+
+emmanuel oladayo
+olawuyi:8161428643
+
+₦4,759.00
+
+19/12/25
+17:06:07
+
+₦2,000.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/1871083781/Access Bank
+
+food ₦2,759.00
+
+19/12/25
+17:21:07
+
+₦50.00 inward
+transfer
+
+Cbn//Access Bank stamp duty on electronic
+funds transfer -
+2077782122
+
+₦12,709.00
+
+19/12/25
+17:21:07
+
+₦10,000.00 inward
+transfer
+
+Amokeoja Ekuse
+Ruth/0053338356/Access Bank
+
+kip:access/amokeoja
+ekuse rut/mobile trf to
+kmf ol
+
+₦12,759.00
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 14 of 24
+
+19/12/25
+19:57:49
+
+₦2,810.00 local
+funds
+transfer
+
+emmanuel oladayo
+olawuyi:8161428643
+
+₦15,519.00
+
+19/12/25
+20:43:57
+
+₦6,344.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+miscellaneous ₦9,175.00
+
+19/12/25
+21:20:45
+
+₦9,175.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+miscellaneous ₦0.00
+
+21/12/25
+14:09:33
+
+₦5,000.00 inward
+transfer
+
+Adebimpe Folashade
+Rafiat/0016136264/Gtbank Plc
+
+owo odun wishing you
+merry christmas and
+happy new to olawuyi
+mobolaji israel.
+00001325122114092300
+0
+
+₦5,000.00
+
+22/12/25
+19:43:40
+
+₦650.00 inward
+transfer
+
+app testing limjinda ₦5,650.00
+
+24/12/25
+17:48:03
+
+₦5,650.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+miscellaneous ₦0.00
+
+02/01/26
+19:49:29
+
+₦650.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing connor ₦650.00
+
+05/01/26
+06:14:15
+
+₦650.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+transfer to family ₦0.00
+
+26/01/26
+08:37:43
+
+₦9,999.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦9,999.00
+
+26/01/26
+08:39:06
+
+₦9,999.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+transfer from olayemi
+basirat oseni
+
+₦19,998.00
+
+26/01/26
+08:54:07
+
+₦9,999.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+miscellaneous ₦9,999.00
+
+26/01/26
+08:55:09
+
+₦9,999.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+miscellaneous ₦0.00
+
+26/01/26
+09:12:02
+
+₦65,000.00 inward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Paycom(Opay)
+
+power bank purchase ₦65,000.00
+
+26/01/26
+09:16:14
+
+₦63,890.00 outward
+transfer
+
+Vik Errand's
+Services/0127004572/Wema Bank
+
+jumia purchase ₦1,110.00
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 15 of 24
+
+26/01/26
+09:16:14
+
+₦50.00 outward
+transfer
+
+Cbn//Wema Bank stamp duty on electronic
+funds transfer -
+2077782122
+
+₦1,060.00
+
+26/01/26
+09:53:39
+
+₦5,000.00 inward
+transfer
+
+Adebimpe Folashade
+Rafiat/0016136264/Gtbank Plc
+
+gift to olawuyi mobolaji
+israel.
+0000132601260953280
+00708156898
+
+₦6,060.00
+
+27/01/26
+15:10:23
+
+₦6,060.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/9165126149/Moniepoint
+
+transfer of funds through
+accounts
+
+₦0.00
+
+27/01/26
+17:19:42
+
+₦3,200.00 inward
+transfer
+
+Sunday Adekunle
+Fadare/7032968196/Paycom(Opay)
+
+for janet fadare ₦3,200.00
+
+28/01/26
+19:12:18
+
+₦3,200.00 outward
+transfer
+
+Michael Olatunji
+Ogunwale/2000635820/Zenith Bank
+Plc
+
+sending money in
+exchange for cash on
+janet's behalf
+
+₦0.00
+
+04/02/26
+20:31:14
+
+₦700.00 inward
+transfer
+
+app testing emmanuel ₦700.00
+
+04/02/26
+21:56:17
+
+₦700.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+transfer of funds ₦0.00
+
+07/03/26
+11:57:52
+
+₦5,000.00 inward
+transfer
+
+Adebimpe Folasade
+Rafiat/0006022601/Union Bank
+
+kip:union/adebimpe
+folasade /mobileunion
+transfer
+
+₦5,000.00
+
+09/03/26
+10:30:53
+
+₦24,610.00 inward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Paycom(Opay)
+
+transfer of funds between
+personal accounts
+
+₦29,610.00
+
+16/03/26
+15:00:50
+
+₦50.00 outward
+transfer
+
+Cbn//Palmpay stamp duty on electronic
+funds transfer -
+2077782122
+
+₦8,210.00
+
+16/03/26
+15:00:50
+
+₦21,350.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+family and friend ₦8,260.00
+
+18/03/26
+13:17:37
+
+₦270.00 airtime airtime purchase
+2348071126572
+
+₦7,940.00
+
+21/03/26
+09:36:11
+
+₦2,000.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+family and friend ₦5,940.00
+
+24/03/26
+22:20:02
+
+₦2,000.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+friend and family ₦3,940.00
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 16 of 24
+
+02/04/26
+20:14:12
+
+₦3,940.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦0.00
+
+11/04/26
+20:28:02
+
+₦3,000.00 inward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦3,000.00
+
+15/04/26
+06:57:01
+
+₦300.00 outward
+transfer
+
+Olayemi Basirat
+Oseni/8056668785/Opay Digital
+Services Limited
+
+bread purchase ₦2,700.00
+
+15/04/26
+07:01:43
+
+₦300.00 outward
+transfer
+
+Titilayo Remilekun
+Akogun/7033749115/Opay Digital
+Services Limited
+
+food ₦2,400.00
+
+18/04/26
+12:00:14
+
+₦26,169.00 inward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+transfer between
+personal accounts
+
+₦28,569.00
+
+18/04/26
+13:29:02
+
+₦47,670.00 inward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/1871083781/Access Bank
+
+mobile trf to kmf family
+and friends olawuyi
+mobolaji israel
+
+₦76,239.00
+
+18/04/26
+13:38:35
+
+₦1,000.00 inward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/1871083781/Access Bank
+
+mobile trf to kmf family
+and friends olawuyi
+mobolaji israel
+
+₦77,239.00
+
+18/04/26
+13:45:18
+
+₦8,000.00 local
+funds
+transfer
+
+family and friends ₦85,239.00
+
+18/04/26
+15:27:39
+
+₦85,000.00 outward
+transfer
+
+Seyi Emmanuel
+Adeyemi/6102228235/Opay Digital
+Services Limited
+
+itel p55 5g purchase. ₦239.00
+
+18/04/26
+15:27:39
+
+₦50.00 outward
+transfer
+
+Cbn//Opay Digital Services Limited stamp duty on electronic
+funds transfer -
+2077782122
+
+₦189.00
+
+20/04/26
+00:18:38
+
+₦189.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦0.00
+
+20/04/26
+18:31:06
+
+₦4,228.00 inward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+transfer between
+personal accounts
+
+₦4,228.00
+
+21/04/26
+21:50:45
+
+₦2,000.00 inward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦6,228.00
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 17 of 24
+
+22/04/26
+15:35:08
+
+₦4,000.00 outward
+transfer
+
+Seyi Emmanuel
+Adeyemi/6102228235/Opay Digital
+Services Limited
+
+charger purchase ₦2,228.00
+
+22/04/26
+16:19:10
+
+₦2,000.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦228.00
+
+23/04/26
+23:52:10
+
+₦1,000.00 inward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦1,228.00
+
+24/04/26
+15:33:34
+
+₦1,000.00 outward
+transfer
+
+Olayemi Oseni/9165126149/Momo Psb miscellaneous ₦228.00
+
+26/04/26
+21:16:23
+
+₦1,000.00 inward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦1,228.00
+
+27/04/26
+05:08:35
+
+₦5,000.00 inward
+transfer
+
+Adebimpe Folashade
+Rafiat/0016136264/GTBank Plc
+
+gift to olawuyi mobolaji
+israel.
+0000132604270507250
+00137445826
+
+₦6,228.00
+
+27/04/26
+13:24:17
+
+₦20.00 outward
+transfer
+
+Michael
+Ogunwale/8085108794/Smartcash
+Psb
+
+miscellaneous ₦6,208.00
+
+29/04/26
+07:09:01
+
+₦300.00 outward
+transfer
+
+Titilayo Remilekun
+Akogun/7033749115/Opay Digital
+Services Limited
+
+bread ₦5,908.00
+
+29/04/26
+07:39:54
+
+₦225.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+garri ₦5,683.00
+
+29/04/26
+19:16:46
+
+₦565.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦5,118.00
+
+29/04/26
+19:23:06
+
+₦118.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦5,000.00
+
+01/05/26
+13:13:43
+
+₦4,400.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦600.00
+
+02/05/26
+07:43:22
+
+₦2,700.00 inward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦3,300.00
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 18 of 24
+
+05/05/26
+12:04:57
+
+₦250.00 outward
+transfer
+
+Funmi Julianah
+Emmanuel/7039895147/Opay Digital
+Services Limited
+
+super glue ₦3,050.00
+
+06/05/26
+07:30:38
+
+₦250.00 inward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦3,300.00
+
+17/05/26
+14:28:47
+
+₦800.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦2,500.00
+
+19/05/26
+20:16:58
+
+₦1,015.00 outward
+transfer
+
+Cowrywise/Israel Mobolaji
+Olawuyi/3207289849/Nombank Mfb
+
+savings ₦1,485.00
+
+27/05/26
+08:55:06
+
+₦685.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦800.00
+
+28/05/26
+17:05:11
+
+₦5,000.00 inward
+transfer
+
+Adebimpe Folashade
+Rafiat/0016136264/Gtbank Plc
+
+gift to olawuyi mobolaji
+israel.
+0000132605281704000
+00060332673
+
+₦5,800.00
+
+28/05/26
+18:15:58
+
+₦230.00 outward
+transfer
+
+Ayoade Asiyanbi
+Adekola/8139042294/Opay Digital
+Services Limited
+
+1/2 congo garri purchase ₦5,570.00
+
+28/05/26
+23:17:09
+
+₦295.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦5,275.00
+
+28/05/26
+23:18:53
+
+₦102.98 inward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Paycom(Opay)
+
+miscellaneous ₦5,377.98
+
+29/05/26
+09:09:58
+
+₦300.00 outward
+transfer
+
+Titilayo Remilekun
+Akogun/7033749115/Opay Digital
+Services Limited
+
+bread purchase ₦5,077.98
+
+29/05/26
+19:24:33
+
+₦200.00 outward
+transfer
+
+Ayoade Asiyanbi
+Adekola/8139042294/Opay Digital
+Services Limited
+
+milk flavouring ₦4,877.98
+
+30/05/26
+08:49:20
+
+₦300.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+atarodo purchase ₦4,577.98
+
+30/05/26
+19:32:05
+
+₦225.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦4,352.98
+
+30/05/26
+21:14:42
+
+₦300.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+sugar purchase ₦4,052.98
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 19 of 24
+
+06/06/26
+13:56:14
+
+₦4,000.00 inward
+transfer
+
+Paystack/1017692813/Nibss Instant
+Payment (Nip)
+
+cowrywisecowrywise
+financial technology ltd
+
+₦8,052.98
+
+06/06/26
+14:19:50
+
+₦3,000.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦5,052.98
+
+06/06/26
+14:21:38
+
+₦1,300.00 inward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Paycom(Opay)
+
+miscellaneous ₦6,352.98
+
+12/06/26
+14:37:12
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing correaius ₦7,052.98
+
+12/06/26
+17:39:55
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing dima ₦7,752.98
+
+12/06/26
+17:48:22
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing wouter ₦8,452.98
+
+12/06/26
+17:59:10
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing helios ₦9,152.98
+
+12/06/26
+18:00:18
+
+₦650.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing helios ₦9,802.98
+
+12/06/26
+18:08:46
+
+₦100.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing real estate ₦9,902.98
+
+12/06/26
+19:02:38
+
+₦700.00 inward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Paycom(Opay)
+
+app testing real estate ₦10,602.98
+
+12/06/26
+19:45:58
+
+₦750.00 outward
+transfer
+
+Anjolaoluwa Blessing
+Adekola/7057289672/Opay Digital
+Services Limited
+
+refund ₦9,852.98
+
+13/06/26
+08:36:34
+
+₦4,800.00 outward
+transfer
+
+Cowrywise/Israel Mobolaji
+Olawuyi/3207289849/Nombank Mfb
+
+savings ₦5,052.98
+
+14/06/26
+21:25:20
+
+₦1,015.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦4,037.98
+
+15/06/26
+20:49:08
+
+₦800.00 outward
+transfer
+
+Babajide James
+Oluokun/8067237160/Palmpay
+
+printing mth201
+assignment
+
+₦3,237.98
+
+17/06/26
+10:05:30
+
+₦675.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+food ₦2,562.98
+
+18/06/26
+19:28:28
+
+₦360.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+groceries ₦2,202.98
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 20 of 24
+
+19/06/26
+13:15:19
+
+₦302.00 inward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Paycom(Opay)
+
+miscellaneous ₦2,504.98
+
+19/06/26
+19:41:06
+
+₦510.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+groceries ₦1,994.98
+
+21/06/26
+17:36:30
+
+₦1,315.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+groceries ₦679.98
+
+22/06/26
+20:03:40
+
+₦100.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+food ₦579.98
+
+23/06/26
+22:23:59
+
+₦579.98 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦0.00
+
+24/06/26
+22:35:12
+
+₦975.00 inward
+transfer
+
+cowrywisecowrywise
+financial technology ltd
+
+₦975.00
+
+25/06/26
+14:01:22
+
+₦5,000.00 inward
+transfer
+
+Adebimpe Folashade
+Rafiat/0016136264/Gtbank Plc
+
+gift to olawuyi mobolaji
+israel.
+00001326062514011100
+0021249244
+
+₦5,975.00
+
+26/06/26
+09:51:51
+
+₦300.00 outward
+transfer
+
+Gracious Mary
+Obhio/8032565680/Opay Digital
+Services Limited
+
+soap ₦5,675.00
+
+26/06/26
+10:41:10
+
+₦300.00 outward
+transfer
+
+Titilayo Remilekun
+Akogun/7033749115/Opay Digital
+Services Limited
+
+bread ₦5,375.00
+
+26/06/26
+21:20:30
+
+₦2,000.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+savings ₦3,375.00
+
+27/06/26
+07:40:57
+
+₦425.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+groceries ₦2,950.00
+
+28/06/26
+01:23:19
+
+₦300.00 airtime airtime purchase
+2349165126149
+
+₦2,650.00
+
+29/06/26
+10:25:54
+
+₦15,000.00 inward
+transfer
+
+Sadiq Ola
+Adebimpe/8122622330/Paycom(Opay)
+
+transfer from sadiq ola
+adebimpe
+
+₦17,650.00
+
+29/06/26
+15:10:17
+
+₦1,661.25 outward
+transfer
+Remita
+Checkout/9012376706/Cashconnect
+Mfb
+
+payment for industrial
+training levy
+
+₦15,988.75
+
+30/06/26
+21:04:02
+
+₦141.00 inward
+transfer
+
+miscellaneous ₦16,129.75
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 21 of 24
+
+30/06/26
+21:04:30
+
+₦1,110.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+groceries ₦15,019.75
+
+02/07/26
+14:49:02
+
+₦3,000.00 outward
+transfer
+
+Cowrywise/Israel Mobolaji
+Olawuyi/3207289849/Nombank Mfb
+
+savings ₦12,019.75
+
+02/07/26
+14:55:17
+
+₦2,000.00 outward
+transfer
+
+Michael Olatunji
+Ogunwale/2000635820/Zenith Bank
+Plc
+
+ln to d ₦10,019.75
+
+02/07/26
+22:39:35
+
+₦9,000.00 airtime airtime purchase
+2349165126149
+
+₦1,019.75
+
+03/07/26
+00:30:11
+
+₦1,000.00 airtime airtime purchase
+2349165126149
+
+₦19.75
+
+10/07/26
+09:56:14
+
+₦13,425.00 inward
+transfer
+
+Paystack/1017692813/Nibss Instant
+Payment (Nip)
+
+cowrywisecowrywise
+financial technology ltd
+
+₦13,444.75
+
+10/07/26
+10:52:50
+
+₦1,500.00 outward
+transfer
+
+Happiness Darasimi
+Olanipekun/8101080764/Moniepoint
+
+imperial dues ₦11,944.75
+
+10/07/26
+10:53:41
+
+₦1,000.00 outward
+transfer
+
+Olayemi Oseni/9165126149/Momo Psb miscellaneous ₦10,944.75
+
+11/07/26
+23:35:12
+
+₦42,097.00 inward
+transfer
+
+cowrywisecowrywise
+financial technology ltd
+
+₦53,041.75
+
+12/07/26
+13:52:40
+
+₦50.00 airtime airtime purchase
+2349165126149
+
+₦52,991.75
+
+13/07/26
+11:32:34
+
+₦900.00 outward
+transfer
+
+Gracious Mary
+Obhio/8032565680/Opay Digital
+Services Limited
+
+soap purchase ₦52,091.75
+
+13/07/26
+11:34:10
+
+₦300.00 outward
+transfer
+
+Gracious Mary
+Obhio/8032565680/Opay Digital
+Services Limited
+
+purchase of 3 kivo
+creamer milk
+
+₦51,791.75
+
+13/07/26
+11:58:49
+
+₦50.00 outward
+transfer
+
+Cbn//Wema Bank stamp duty on electronic
+funds transfer -
+2077782122
+
+₦36,741.75
+
+13/07/26
+11:58:49
+
+₦15,000.00 outward
+transfer
+
+Oseni Olayemi
+Basirat/0121310712/Wema Bank
+
+purchase of spectranet
+mifi
+
+₦36,791.75
+
+13/07/26
+13:55:27
+
+₦740.00 inward
+transfer
+
+Olayemi Oseni/9165126149/Momo Psb payment from
+9165126149 to
+2077782122
+
+₦37,481.75
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 22 of 24
+
+13/07/26
+19:55:38
+
+₦250.00 outward
+transfer
+
+Pos Transfer - Olajumoke
+Azeez/8251269154/Moniepoint
+
+garri 1/2 congo purchase ₦37,231.75
+
+13/07/26
+20:02:23
+
+₦9,000.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦28,231.75
+
+13/07/26
+20:09:43
+
+₦250.00 outward
+transfer
+
+reversal of garri 1/2
+congo purchase
+
+₦28,481.75
+
+24/07/26
+08:08:49
+
+₦1,480.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦27,001.75
+
+28/07/26
+17:43:29
+
+₦5,000.00 inward
+transfer
+
+Michael Olatunji
+Ogunwale/2000635820/Zenith Bank
+Plc
+
+ussd transfer ₦32,001.75
+
+28/07/26
+19:02:06
+
+₦6,750.00 inward
+transfer
+
+Oseni Olayemi
+Basirat/0121310712/Wema Bank
+
+alat nip transfer to
+olawuyi, mobolaji israel
+from oseni olayemi
+basirat - transport,roll on
+
+₦38,751.75
+
+29/07/26
+08:26:36
+
+₦1,175.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Moniepoint
+
+groceries ₦37,576.75
+
+29/07/26
+18:08:55
+
+₦260.00 outward
+transfer
+
+Ruth Adedoyin/2415303338/United
+Bank For Africa
+
+viva detergent ₦37,316.75
+
+29/07/26
+19:39:55
+
+₦1,200.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+miscellaneous ₦36,116.75
+
+30/07/26
+02:44:08
+
+₦5,000.00 inward
+transfer
+
+Adebimpe Folashade
+Rafiat/0016136264/Gtbank Plc
+
+gift to olawuyi mobolaji
+israel.
+0000132607300242570
+00101209247
+
+₦41,116.75
+
+01/08/26
+09:58:12
+
+₦1,410.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Moniepoint
+
+purchase of food stuffs
+and groceries
+
+₦39,706.75
+
+01/08/26
+09:58:51
+
+₦100.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Moniepoint
+
+purchase of groundnut oil ₦39,606.75
+
+01/08/26
+11:49:31
+
+₦53,860.00 inward
+transfer
+
+Israel Mobolaji
+Olawuyi/1930839340/Access Bank
+
+mobile trf to kmf transfer
+of funds between
+personal accts olawuyi
+mobolaji israel
+
+₦93,466.75
+
+01/08/26
+11:50:18
+
+₦50.00 outward
+transfer
+
+Cbn//Palmpay stamp duty on electronic
+funds transfer -
+2077782122
+
+₦68,416.75
+
+Kuda MF Bank (RC796975). All rights reserved. All deposits are insured by the Nigerian Deposit Insurance Corporation (NDIC).
+Kuda MF Bank is licensed by the Central Bank of Nigeria. “Kuda” and “Kudabank” are trademarks of Kuda Technologies LTD.
+
+1-11 Commercial avenue, Yaba, Lagos. Nigeria. 131 Finsbury Pavement, London, EC2A 1NT, UK.
+
+Page 23 of 24
+
+01/08/26
+11:50:18
+
+₦25,000.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+feeding funds ₦68,466.75
+
+01/08/26
+15:05:48
+
+₦8,636.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+transfer of funds ₦59,780.75
+
+01/08/26
+15:06:34
+
+₦9,999.00 outward
+transfer
+
+Israel Mobolaji
+Olawuyi/8071126572/Opay Digital
+Services Limited
+
+transfer of funds for
+feeding this month
+
+₦49,781.75
+
+01/08/26
+19:53:29
+
+₦1,000.00 outward
+transfer
+
+Oluwaseyi Glory
+Oladepo/5246603551/Moniepoint
+
+stumped contributions ₦48,781.75
+
+02/08/26
+18:06:09
+
+₦260.00 outward
+transfer
+
+Ruth Adedoyin/9067382212/Momo
+Psb
+
+viva detergent ₦48,521.75
+
+02/08/26
+18:08:02
+
+₦500.00 outward
+transfer
+
+Ruth Adedoyin/9067382212/Momo
+Psb
+
+milk 200 brush 300 ₦48,021.75
+
+04/08/26
+19:45:10
+
+₦50.00 outward
+transfer
+
+Michael
+Ogunwale/8085108794/Smartcash
+Psb
+
+phone & internet ₦47,971.75
+
+04/08/26
+21:03:06
+
+₦900.00 airtime airtime purchase
+2349165126149
+
+₦47,071.75
+
+08/08/26
+16:07:04
+
+₦20,000.00 outward
+transfer
+
+Hamid Akinwumi
+Akinrodolu/9032783996/Opay Digital
+Services Limited
+
+payment for laptop
+keyboard purchase
+
+₦27,071.75
+
+08/08/26
+16:07:04
+
+₦50.00 outward
+transfer
+
+Cbn//Opay Digital Services Limited stamp duty on electronic
+funds transfer -
+2077782122
+
+₦27,021.75
+
+10/08/26
+17:35:09
+
+₦5,000.00 outward
+transfer
+
+Hamid Akinwumi
+Akinrodolu/9032783996/Opay Digital
+Services Limited
+
+payment for
+workmanship for laptop
+fixing
+
+₦22,021.75
+
+21/08/26
+14:20:46
+
+₦9,999.00 outward
+transfer
+
+Emmanuel Oladayo
+Olawuyi/8161428643/Palmpay
+
+loan for your chicken
+business
+
+₦12,022.75
+
+24/08/26
+14:06:57
+
+₦5,000.00 inward
+transfer
+
+gift to olawuyi mobolaji
+israel.
+0000132608241406460
+00043184130
+
+₦17,022.75
