@@ -45,13 +45,26 @@ def fallback_categorize(description: str) -> CategoryResult:
             return CategoryResult(main_category=main_cat, sub_category=sub_cat)
     return CategoryResult(main_category="Uncategorized", sub_category="")
 
-def _is_rate_limit_error(exc: Exception) -> bool:
+def _is_model_unavailable_error(exc: Exception) -> bool:
     status_code = getattr(exc, "status_code", None) or getattr(exc, "code", None)
-    if status_code == 429:
+    if status_code in (429, 500, 502, 503, 504, "429", "500", "502", "503", "504"):
         return True
 
     message = str(exc).lower()
-    return any(term in message for term in ("rate limit", "rate_limit", "quota exceeded", "resource exhausted"))
+    return any(
+        term in message
+        for term in (
+            "rate limit",
+            "rate_limit",
+            "quota exceeded",
+            "resource exhausted",
+            "unavailable",
+            "high demand",
+            "deadline exceeded",
+            "timed out",
+            "timeout",
+        )
+    )
 
 def _exhausted_models(client: 'genai.Client') -> set[str]:
     exhausted = getattr(client, "_gemini_exhausted_models", None)
@@ -89,10 +102,10 @@ def categorize_transaction(tx: ParsedTransaction, client: Optional['genai.Client
         Type: {tx.type}
         """
         exhausted_models = _exhausted_models(client)
-        rate_limited_models = []
+        unavailable_models = []
         for model in GEMINI_MODELS:
             if model in exhausted_models:
-                rate_limited_models.append(model)
+                unavailable_models.append(model)
                 continue
             try:
                 response = client.models.generate_content(
@@ -109,7 +122,7 @@ def categorize_transaction(tx: ParsedTransaction, client: Optional['genai.Client
                     cat_result = fallback_categorize(tx.description)
                 return tx, cat_result
             except Exception as e:
-                if not _is_rate_limit_error(e):
+                if not _is_model_unavailable_error(e):
                     print(
                         f"Warning: Gemini categorization failed with {model} ({e}). "
                         "Falling back to local rules.",
@@ -118,16 +131,17 @@ def categorize_transaction(tx: ParsedTransaction, client: Optional['genai.Client
                     return tx, fallback_categorize(tx.description)
 
                 exhausted_models.add(model)
-                rate_limited_models.append(model)
+                unavailable_models.append(model)
                 print(
-                    f"Warning: Gemini model {model} hit a rate limit or is over quota. "
+                    f"Warning: Gemini model {model} is rate-limited or temporarily unavailable "
+                    f"({e}). "
                     "Trying the next configured model.",
                     file=sys.stderr,
                 )
 
-        if rate_limited_models and len(rate_limited_models) == len(GEMINI_MODELS):
+        if unavailable_models and len(unavailable_models) == len(GEMINI_MODELS):
             print(
-                f"Warning: All configured Gemini models are rate-limited or over quota "
+                f"Warning: All configured Gemini models are rate-limited or temporarily unavailable "
                 f"while categorizing '{tx.description}'. Falling back to local rules.",
                 file=sys.stderr,
             )

@@ -123,6 +123,31 @@ def test_classifier_rotates_rate_limited_models():
     ]
     assert attempted_models == list(GEMINI_MODELS[:3])
 
+@pytest.mark.skipif(not GENAI_AVAILABLE, reason="google-genai not installed")
+def test_classifier_rotates_temporarily_unavailable_models():
+    client_mock = MagicMock()
+    client_mock.models.generate_content.side_effect = [
+        errors.APIError("503 UNAVAILABLE: high demand", {}),
+        MagicMock(parsed=CategoryResult(main_category="Food & Dining", sub_category="")),
+    ]
+    tx = ParsedTransaction(
+        date="2025/08/01",
+        account="Access",
+        amount=1000.0,
+        type="Expenses",
+        description="RESTAURANT PAYMENT",
+    )
+
+    result_tx, cat = categorize_transaction(tx, client=client_mock)
+
+    assert result_tx.type == "Expenses"
+    assert cat.main_category == "Food & Dining"
+    attempted_models = [
+        call.kwargs["model"]
+        for call in client_mock.models.generate_content.call_args_list
+    ]
+    assert attempted_models == list(GEMINI_MODELS[:2])
+
 def test_classifier_internal_transfer():
     tx = ParsedTransaction(
         date="2025/08/01",

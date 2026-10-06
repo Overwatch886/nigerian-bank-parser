@@ -50,6 +50,10 @@ The model order can be overridden without changing code:
 GEMINI_MODELS=gemini-3.5-flash-lite,gemini-3.1-flash-lite,gemini-2.5-flash-lite,gemini-2.5-flash
 ```
 
+These environment settings belong in the `.env` file at the repository root
+(the same directory as `main.py`). The optional local-model settings described
+in future configuration should go in this file as well.
+
 ### Output
 The tool produces a tab-separated values (`.tsv`) file with the following headers:
 `Date`, `Account`, `Main Category`, `Sub Category`, `Note`, `Amount`, `Type`, `Description`.
