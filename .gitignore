@@ -1,0 +1,13 @@
+# Python Cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Input and Output Folders
+inputs/
+outputs/
+
+# Environment Variables
+*.env
+
+*.tsv
