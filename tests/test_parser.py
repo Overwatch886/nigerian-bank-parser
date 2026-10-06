@@ -15,27 +15,39 @@ def test_standardize_date():
     assert _standardize_date("2025 Aug 01") == "2025/08/01"
 
 def test_multiline_reconstruction(tmp_path):
-    # This tests the output from ingest assuming `pdfplumber` works correctly
-    # Since we can't easily mock pdfplumber page extraction directly without complex setups,
-    # we'll test the raw parsing logic on the actual sample files if available,
-    # or just use small mock pdfs. Here we will run on sample files and check a specific known multiline.
+    # Create a mock PDF extract string and mock pdfplumber to return it
+    mock_pdf_text = (
+        "Account Number Date\n"
+        "25/06/26 ₦5,000.00 inward Adebimpe Folashade gift to olawuyi mobolaji ₦5,975.00\n"
+        "14:01:22 transfer Rafiat/0016136264/Gtbank Plc israel.\n"
+        "00001326062514011100\n"
+        "0021249244\n"
+        "26/06/26 ₦300.00 outward Gracious Mary soap ₦5,675.00\n"
+        "09:51:51 transfer Obhio/8032565680/Opay Digital\n"
+        "Services Limited\n"
+    )
 
-    # We know in Kuda sample there is:
-    # 25/06/26 ₦5,000.00 inward Adebimpe Folashade gift to olawuyi mobolaji israel. 00001326062514011100 0021249244
-    if os.path.exists('fixtures/kuda_sample.pdf'):
-        transactions = extract_kuda('fixtures/kuda_sample.pdf')
-        assert len(transactions) > 0
-        found = False
-        for tx in transactions:
-                if tx.amount == 5000.0 and "0021249244" in tx.description:
-                    found = True
-                    assert tx.type == "Income"
-                    # Check multiline
-                    assert "israel." in tx.description
-        assert found
-    else:
-        # Just to fail if run in environment where fixtures are assumed to exist
-        pass
+    mock_page = MagicMock()
+    mock_page.extract_text.return_value = mock_pdf_text
+
+    mock_pdf = MagicMock()
+    mock_pdf.pages = [mock_page]
+
+    # Context manager mock
+    mock_pdf.__enter__.return_value = mock_pdf
+    mock_pdf.__exit__.return_value = None
+
+    with patch('pdfplumber.open', return_value=mock_pdf):
+        transactions = extract_kuda('mock.pdf')
+
+    assert len(transactions) == 2
+    tx1 = transactions[0]
+    assert tx1.date == "2026/06/25"
+    assert tx1.amount == 5000.0
+    assert tx1.type == "Income"
+    assert "Adebimpe Folashade gift to olawuyi mobolaji" in tx1.description
+    assert "Rafiat/0016136264/Gtbank Plc israel." in tx1.description
+    assert "00001326062514011100 0021249244" in tx1.description
 
 @pytest.mark.skipif(not GENAI_AVAILABLE, reason="google-genai not installed")
 def test_classifier_fallback_mechanism():

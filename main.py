@@ -14,14 +14,11 @@ if GENAI_AVAILABLE:
 
 def main():
     parser = argparse.ArgumentParser(description="Bank Statement Parser CLI for Money Manager")
-    parser.add_argument("--input-dir", type=str, help="Directory containing PDF statements or a single PDF file path")
+    parser.add_argument("--input-dir", type=str, required=True, help="Directory containing PDF statements or a single PDF file path")
     parser.add_argument("--output-dir", type=str, default=os.getcwd(), help="Directory to save the exported TSV")
     parser.add_argument("--api-key", type=str, help="Google Gemini API Key (optional)")
 
     args = parser.parse_args()
-
-    if not args.input_dir:
-        parser.error("--input-dir is required")
 
     input_paths = []
     if os.path.isfile(args.input_dir):
@@ -75,7 +72,6 @@ def main():
             print(f"Error processing {path}: {e}")
 
     if all_transactions:
-        os.makedirs(args.output_dir, exist_ok=True)
         output_file = os.path.join(args.output_dir, "money_manager_export.tsv")
         export_to_tsv(all_transactions, output_file)
 
