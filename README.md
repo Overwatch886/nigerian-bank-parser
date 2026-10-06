@@ -11,6 +11,9 @@ A resilient, headless Python CLI tool designed to parse Nigerian bank statement 
 - **Hybrid Categorization**:
   - Uses Google GenAI models in order, starting with `gemini-3.5-flash-lite`, then `gemini-3.1-flash-lite`, followed by Gemma 3 models and `gemini-2.5-flash`.
   - Uses workbook-compatible categories such as `🍜 Food`, `🚖 Transport`, `Airtime Expense`, and `Taxes, Fees and Levies`.
+  - The non-model keyword classifier recognizes workbook patterns for airtime/data,
+    food staples, bank fees, education, health, transport, investments, loans,
+    household purchases, subscriptions, gifts, bonuses, and allowances.
   - Skips models that are rate-limited for the rest of the run, then gracefully degrades to local regex/keyword rules if every configured model is unavailable.
 - **Inter-account Transfer Detection**: Automatically detects possible transfers between the user's accounts.
 - **Unknown category handling**: If Gemini or the local model cannot map a transaction to a workbook category, both category and subcategory are exported as `Other`.

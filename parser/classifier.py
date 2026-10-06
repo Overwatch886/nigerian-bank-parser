@@ -59,11 +59,25 @@ class CategoryResult(BaseModel):
 
 # Local Heuristic Rules
 CATEGORY_RULES = [
-    (r'(UBER|BOLT|FUEL|TOTAL|OANDO|CONOIL)', 'Transport', ''),
-    (r'(MTN|AIRTEL|GLO|9MOBILE|IBEDC|IKEDC|EKEDC|ELECTRIC)', 'Utilities & Airtime', ''),
-    (r'(CHEF|KITCHEN|FOOD|RESTAURANT|BUKKA|DOMINOS|EATERIES)', 'Food & Dining', ''),
-    (r'(SUPERMARKET|GROCERY|MART|SPA)', 'Groceries', ''),
-    (r'(STAMP DUTY|ELECTRONIC MONEY TRANSFER LEVY|SMS CHG|VAT|MAINTENANCE)', 'Bank Charges', '')
+    (r'\b(UBER|BOLT|FUEL|TOTAL|OANDO|CONOIL|TRANSPORT|BUS FARE|DANFO)\b', 'Transport', 'Bus'),
+    (r'\b(MTN|AIRTEL|GLO|9MOBILE|IBEDC|IKEDC|EKEDC|ELECTRIC|AIRTIME|DATA|GB)\b', 'Utilities & Airtime', ''),
+    (r'\b(CHEF|KITCHEN|FOOD|RESTAURANT|BUKKA|DOMINOS|EATERIES|BEANS|RICE|BREAD|EGG|GARRI|FOOD STUFFS?)\b', 'Food & Dining', 'Purchase of Food Accessories and Minor Food Stuffs'),
+    (r'\b(SUPERMARKET|GROCERY|MART|SHOPPING)\b', 'Groceries', ''),
+    (r'\b(STAMP DUTY|ELECTRONIC MONEY TRANSFER LEVY|TRANSFER LEVY|SMS CHG|SMS ALERT FEE|VAT|MAINTENANCE|BANK CHARGE|FEES?)\b', 'Bank Charges', ''),
+    (r'\b(SALARY|LESSON PAYMENT|LESSON SALARY|WAGES?)\b', 'Income', ''),
+    (r'\b(ALLOWANCE|STIPENDS?|BURSARY)\b', '🤑 Allowance', ''),
+    (r'\b(BONUS)\b', '🏅 Bonus', ''),
+    (r'\b(GIFT|BIRTHDAY)\b', '🎁 Gift', ''),
+    (r'\b(TITHE|DONATION|DONATED)\b', 'Donations', ''),
+    (r'\b(LENT|LOAN|BORROWED|DEBT PAYMENT|PAY BACK|PAID BACK)\b', 'Loans', 'Money Lent to Others'),
+    (r'\b(ATM|CASH WITHDRAWAL|WITHDRAWAL FROM|CASH)\b', 'Cash', ''),
+    (r'\b(HOSPITAL|X-RAY|XRAY|LAB MASTER|PHARMACY|MEDICAL|GLASSES|EYEGLASSES|NOSE MASK)\b', '🧘🏼 Health', ''),
+    (r'\b(SCHOOL|SCHOOLING|NACOS|TEXTBOOK|WORKBOOK|CALCULATOR|PHOTOCOPY|PRINTING|PASSPORT PHOTOS|ACADEMIC|DEPARTMENTAL DUES)\b', '📙 Education', ''),
+    (r'\b(BAMBOO|AFRINVEST|OPTIMUS|STOCKS?|CRYPTO|SOLANA|INVESTMENT)\b', 'Investments', ''),
+    (r'\b(VPN|SUBSCRIPTION|RENEWAL)\b', 'Subscriptions', ''),
+    (r'\b(DETERGENT|BATHING SOAP|SOAP|KEROSENE|PADLOCK|HOUSEHOLD)\b', '🪑 Household', 'Toiletries'),
+    (r'\b(SHOE|SHOES|APPAREL|CLOTHING)\b', '🧥 Apparel', 'Shoes'),
+    (r'\b(SALE OF|SOLD|ASSET SALE)\b', 'Sale Of Assets', ''),
 ]
 
 def fallback_categorize(description: str) -> CategoryResult:

@@ -183,6 +183,25 @@ def test_classifier_uses_other_for_unknown_model_category():
     assert cat.main_category == "Other"
     assert cat.sub_category == "Other"
 
+@pytest.mark.parametrize(
+    ("description", "main_category", "sub_category"),
+    [
+        ("Airtime Purchase To My MTN Number", "Airtime Expense", ""),
+        ("SMS Alert Fee-29/06-28/07/2025 + VAT", "Taxes, Fees and Levies", ""),
+        ("Purchase of beans and rice", "🍜 Food", "Purchase of Food Accessories and Minor Food Stuffs"),
+        ("Payment For X-Ray At Lab Master", "🧘🏼 Health", ""),
+        ("Payment for MTH102 Workbook", "📙 Education", ""),
+        ("VPN Subscription Renewal", "Subscriptions", ""),
+        ("Purchase of Bathing Soap", "🪑 Household", "Toiletries"),
+        ("Christmas Bonus from Mummy", "🏅 Bonus", ""),
+    ],
+)
+def test_keyword_classifier_matches_workbook_patterns(description, main_category, sub_category):
+    result = fallback_categorize(description)
+
+    assert result.main_category == main_category
+    assert result.sub_category == sub_category
+
 def test_classifier_uses_enabled_local_model():
     response = MagicMock()
     response.__enter__.return_value = response
