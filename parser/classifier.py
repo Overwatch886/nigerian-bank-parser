@@ -2,7 +2,11 @@ import re
 import os
 import sys
 import json
+import subprocess
+import time
 from urllib import request
+from urllib.error import HTTPError, URLError
+from urllib.parse import urlsplit, urlunsplit
 from pydantic import BaseModel
 from typing import Optional, Tuple
 from parser.ingest import ParsedTransaction
@@ -35,6 +39,11 @@ LOCAL_MODEL_ENDPOINT = os.environ.get(
 )
 LOCAL_MODEL_NAME = os.environ.get("LOCAL_MODEL_NAME", "granite-4.0-h-tiny")
 LOCAL_MODEL_TIMEOUT = float(os.environ.get("LOCAL_MODEL_TIMEOUT", "30"))
+LOCAL_MODEL_START_SCRIPT = os.environ.get(
+    "LOCAL_MODEL_START_SCRIPT",
+    r"C:\developer\scripts\run_granite.bat",
+)
+LOCAL_MODEL_STARTUP_TIMEOUT = float(os.environ.get("LOCAL_MODEL_STARTUP_TIMEOUT", "30"))
 _LOCAL_MODEL_UNAVAILABLE = False
 
 class CategoryResult(BaseModel):
@@ -84,6 +93,62 @@ def _exhausted_models(client: 'genai.Client') -> set[str]:
         exhausted = set()
         setattr(client, "_gemini_exhausted_models", exhausted)
     return exhausted
+
+def _local_model_health_url() -> str:
+    endpoint = urlsplit(LOCAL_MODEL_ENDPOINT)
+    return urlunsplit((endpoint.scheme, endpoint.netloc, "/health", "", ""))
+
+def _local_model_is_running() -> bool:
+    try:
+        with request.urlopen(_local_model_health_url(), timeout=2) as response:
+            return response.status == 200
+    except (HTTPError, URLError, TimeoutError, OSError, ValueError):
+        return False
+
+def ensure_local_model_running() -> bool:
+    global _LOCAL_MODEL_UNAVAILABLE
+    if not LOCAL_MODEL_ENABLED:
+        return True
+    if _local_model_is_running():
+        return True
+
+    if not os.path.isfile(LOCAL_MODEL_START_SCRIPT):
+        print(
+            f"Warning: Local model startup script was not found: {LOCAL_MODEL_START_SCRIPT}. "
+            "Falling back to local rules.",
+            file=sys.stderr,
+        )
+        _LOCAL_MODEL_UNAVAILABLE = True
+        return False
+
+    try:
+        subprocess.Popen(
+            [os.environ.get("COMSPEC", "cmd.exe"), "/c", LOCAL_MODEL_START_SCRIPT],
+            creationflags=subprocess.CREATE_NEW_PROCESS_GROUP,
+        )
+    except OSError as exc:
+        print(
+            f"Warning: Could not start local model with {LOCAL_MODEL_START_SCRIPT} ({exc}). "
+            "Falling back to local rules.",
+            file=sys.stderr,
+        )
+        _LOCAL_MODEL_UNAVAILABLE = True
+        return False
+
+    deadline = time.monotonic() + LOCAL_MODEL_STARTUP_TIMEOUT
+    while time.monotonic() < deadline:
+        if _local_model_is_running():
+            print(f"Local model is ready at {LOCAL_MODEL_ENDPOINT}.")
+            return True
+        time.sleep(0.5)
+
+    print(
+        f"Warning: Local model did not become ready within {LOCAL_MODEL_STARTUP_TIMEOUT:.0f} "
+        "seconds. Falling back to local rules.",
+        file=sys.stderr,
+    )
+    _LOCAL_MODEL_UNAVAILABLE = True
+    return False
 
 def _local_model_prompt(tx: ParsedTransaction) -> str:
     return f"""

@@ -191,6 +191,25 @@ def test_classifier_uses_enabled_local_model():
     payload = json.loads(urlopen.call_args.args[0].data.decode("utf-8"))
     assert payload["model"] == classifier.LOCAL_MODEL_NAME
 
+def test_local_model_startup_skips_launch_when_healthy():
+    with patch.object(classifier, "LOCAL_MODEL_ENABLED", True), \
+            patch.object(classifier, "_local_model_is_running", return_value=True), \
+            patch.object(classifier.subprocess, "Popen") as popen:
+        assert classifier.ensure_local_model_running() is True
+
+    popen.assert_not_called()
+
+def test_local_model_startup_launches_script_until_healthy():
+    with patch.object(classifier, "LOCAL_MODEL_ENABLED", True), \
+            patch.object(classifier, "LOCAL_MODEL_START_SCRIPT", "run_granite.bat"), \
+            patch.object(classifier.os.path, "isfile", return_value=True), \
+            patch.object(classifier, "_local_model_is_running", side_effect=[False, True]), \
+            patch.object(classifier.subprocess, "Popen") as popen, \
+            patch.object(classifier.time, "sleep"):
+        assert classifier.ensure_local_model_running() is True
+
+    popen.assert_called_once()
+
 def test_money_manager_format(tmp_path):
     output_path = tmp_path / "output.tsv"
 

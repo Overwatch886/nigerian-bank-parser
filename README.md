@@ -59,10 +59,14 @@ LOCAL_MODEL_ENABLED=true
 LOCAL_MODEL_ENDPOINT=http://127.0.0.1:8080/v1/chat/completions
 LOCAL_MODEL_NAME=granite-4.0-h-tiny
 LOCAL_MODEL_TIMEOUT=30
+LOCAL_MODEL_START_SCRIPT=C:\developer\scripts\run_granite.bat
+LOCAL_MODEL_STARTUP_TIMEOUT=30
 ```
 
 The Granite launcher at `C:\developer\scripts\run_granite.bat` starts the
-llama.cpp server used by these settings. Start it before running the parser.
+llama.cpp server used by these settings. When local mode is enabled, the
+parser checks the server's `/health` endpoint and starts this script if the
+server is not already running.
 The local model is tried after Gemini rotation and before regex rules. If the
 local endpoint fails, it is disabled for the rest of that run and the parser
 falls back to regex rules.
