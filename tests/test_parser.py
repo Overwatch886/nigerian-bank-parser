@@ -4,7 +4,7 @@ import csv
 from unittest.mock import MagicMock, patch
 
 from parser.ingest import ParsedTransaction, extract_kuda, extract_access, extract_opay, _standardize_date
-from parser.classifier import categorize_transaction, CategoryResult, fallback_categorize, GENAI_AVAILABLE
+from parser.classifier import categorize_transaction, CategoryResult, fallback_categorize, GENAI_AVAILABLE, GEMINI_MODELS
 if GENAI_AVAILABLE:
     from google.genai import errors
 from parser.exporter import export_to_tsv
@@ -69,11 +69,59 @@ def test_classifier_fallback_mechanism():
         description="UBER TRIP TO LAGOS"
     )
 
-    # Should not crash, should return a category
-    result_tx, cat = categorize_transaction(tx, client=client_mock)
+    # Should not crash, should return a category and report the rate limit.
+    with patch("sys.stderr") as stderr:
+        result_tx, cat = categorize_transaction(tx, client=client_mock)
 
     assert cat.main_category == "Transport"
     assert result_tx.type == "Expenses"
+    stderr_output = "".join(call.args[0] for call in stderr.write.call_args_list)
+    assert "rate limit" in stderr_output.lower()
+
+@pytest.mark.skipif(not GENAI_AVAILABLE, reason="google-genai not installed")
+def test_classifier_uses_configured_gemini_model():
+    client_mock = MagicMock()
+    client_mock.models.generate_content.return_value.parsed = CategoryResult(
+        main_category="Food & Dining",
+        sub_category="",
+    )
+    tx = ParsedTransaction(
+        date="2025/08/01",
+        account="Access",
+        amount=1000.0,
+        type="Expenses",
+        description="RESTAURANT PAYMENT",
+    )
+
+    categorize_transaction(tx, client=client_mock)
+
+    assert client_mock.models.generate_content.call_args.kwargs["model"] == GEMINI_MODELS[0]
+
+@pytest.mark.skipif(not GENAI_AVAILABLE, reason="google-genai not installed")
+def test_classifier_rotates_rate_limited_models():
+    client_mock = MagicMock()
+    client_mock.models.generate_content.side_effect = [
+        errors.APIError("Rate limit exceeded", {}),
+        errors.APIError("Rate limit exceeded", {}),
+        MagicMock(parsed=CategoryResult(main_category="Food & Dining", sub_category="")),
+    ]
+    tx = ParsedTransaction(
+        date="2025/08/01",
+        account="Access",
+        amount=1000.0,
+        type="Expenses",
+        description="RESTAURANT PAYMENT",
+    )
+
+    result_tx, cat = categorize_transaction(tx, client=client_mock)
+
+    assert result_tx.type == "Expenses"
+    assert cat.main_category == "Food & Dining"
+    attempted_models = [
+        call.kwargs["model"]
+        for call in client_mock.models.generate_content.call_args_list
+    ]
+    assert attempted_models == list(GEMINI_MODELS[:3])
 
 def test_classifier_internal_transfer():
     tx = ParsedTransaction(

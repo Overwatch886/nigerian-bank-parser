@@ -8,8 +8,8 @@ A resilient, headless Python CLI tool designed to parse Nigerian bank statement 
 - **Multiline Normalization**: Reconstructs broken transaction narrations spanning multiple lines.
 - **Data Standardization**: Normalizes amounts to absolute positive floats and formats dates strictly to `YYYY/MM/DD`.
 - **Hybrid Categorization**:
-  - Uses the Google GenAI (`gemini-2.5-flash`) for smart transaction categorization.
-  - Gracefully degrades to a local regex/keyword-based heuristic engine upon API failures (e.g., rate limits, missing keys, or timeouts).
+  - Uses Google GenAI models in order, starting with `gemini-3.5-flash-lite`, then `gemini-3.1-flash-lite`, followed by `gemini-2.5-flash-lite` and `gemini-2.5-flash`.
+  - Skips models that are rate-limited for the rest of the run, then gracefully degrades to local regex/keyword rules if every configured model is unavailable.
 - **Inter-account Transfer Detection**: Automatically detects possible transfers between the user's accounts.
 - **Strict Output Format**: Generates an 8-column `.tsv` file matching exactly what Money Manager expects.
 
@@ -43,6 +43,12 @@ python main.py --input-dir /path/to/statements --output-dir /path/to/export
 - `--input-dir`: (Required) Path to a directory containing PDF statements or a specific PDF file.
 - `--output-dir`: (Optional) Directory to save the exported `money_manager_export.tsv`. Defaults to the current working directory.
 - `--api-key`: (Optional) Google Gemini API key. If not provided, it will check the `GEMINI_API_KEY` environment variable. If neither is present, the script defaults to local regex rules.
+
+The model order can be overridden without changing code:
+
+```env
+GEMINI_MODELS=gemini-3.5-flash-lite,gemini-3.1-flash-lite,gemini-2.5-flash-lite,gemini-2.5-flash
+```
 
 ### Output
 The tool produces a tab-separated values (`.tsv`) file with the following headers:
