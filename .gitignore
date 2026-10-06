@@ -1,13 +1,15 @@
-# Python Cache
 __pycache__/
 *.pyc
-.pytest_cache/
-
-# Input and Output Folders
-inputs/
-outputs/
-
-# Environment Variables
-*.env
-
 *.tsv
+
+# User's local file exceptions
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.idea/
+.vscode/
+*.log
