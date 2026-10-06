@@ -71,7 +71,7 @@ def fallback_categorize(description: str) -> CategoryResult:
     for pattern, main_cat, sub_cat in CATEGORY_RULES:
         if re.search(pattern, desc_upper):
             return _normalize_category(CategoryResult(main_category=main_cat, sub_category=sub_cat))
-    return CategoryResult(main_category="Other", sub_category="")
+    return CategoryResult(main_category="Other", sub_category="Other")
 
 def _normalize_category(result: CategoryResult) -> CategoryResult:
     aliases = {
@@ -83,10 +83,10 @@ def _normalize_category(result: CategoryResult) -> CategoryResult:
         "Income": "💰 Salary",
         "Uncategorized": "Other",
     }
-    return CategoryResult(
-        main_category=aliases.get(result.main_category, result.main_category),
-        sub_category=result.sub_category,
-    )
+    main_category = aliases.get(result.main_category, result.main_category)
+    if main_category not in WORKBOOK_CATEGORIES:
+        return CategoryResult(main_category="Other", sub_category="Other")
+    return CategoryResult(main_category=main_category, sub_category=result.sub_category)
 
 def _is_model_unavailable_error(exc: Exception) -> bool:
     status_code = getattr(exc, "status_code", None) or getattr(exc, "code", None)
@@ -238,7 +238,7 @@ def categorize_transaction(tx: ParsedTransaction, client: Optional['genai.Client
              is_internal = True
 
     if is_internal:
-        tx.type = "Transfer"
+        tx.type = "Transfer-Out"
         tx_category = CategoryResult(main_category="Transfer", sub_category="Internal")
         return tx, tx_category
 

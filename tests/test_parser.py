@@ -161,8 +161,27 @@ def test_classifier_internal_transfer():
 
     result_tx, cat = categorize_transaction(tx, client=None)
 
-    assert result_tx.type == "Transfer"
+    assert result_tx.type == "Transfer-Out"
     assert cat.main_category == "Transfer"
+
+def test_classifier_uses_other_for_unknown_model_category():
+    client_mock = MagicMock()
+    client_mock.models.generate_content.return_value.parsed = CategoryResult(
+        main_category="Made Up Category",
+        sub_category="Made Up Subcategory",
+    )
+    tx = ParsedTransaction(
+        date="2025-08-01",
+        account="Access Bank account ",
+        amount=1000.0,
+        type="Expense",
+        description="UNRECOGNIZED MERCHANT",
+    )
+
+    _, cat = categorize_transaction(tx, client=client_mock)
+
+    assert cat.main_category == "Other"
+    assert cat.sub_category == "Other"
 
 def test_classifier_uses_enabled_local_model():
     response = MagicMock()
