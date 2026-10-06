@@ -1,7 +1,7 @@
 import re
 import os
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List, Optional, Tuple
 from parser.ingest import ParsedTransaction
 
 try:
@@ -31,24 +31,7 @@ def fallback_categorize(description: str) -> CategoryResult:
             return CategoryResult(main_category=main_cat, sub_category=sub_cat)
     return CategoryResult(main_category="Uncategorized", sub_category="")
 
-def is_transfer(description: str, account_names: List[str] = None) -> bool:
-    # Detect transfers between the user's accounts
-    # The user typically transfers between Access, Kuda, OPay, Palmpay, Wema, etc.
-    # In a real app we'd match exact account numbers.
-    # Based on instructions: detect transfers between user's accounts (Access to Kuda/OPay).
-    # Since we might not know all names, we check for explicit 'transfer from/to <user's own names>' if available.
-
-    # We'll use a simple heuristic for now:
-    desc_lower = description.lower()
-    if 'transfer of funds between personal accts' in desc_lower:
-        return True
-
-    # For now, let's treat any explicit user name matches as internal transfers if provided
-    # A robust implementation would need configuration of user names/accounts.
-
-    return False
-
-def categorize_transaction(tx: ParsedTransaction, client: Optional['genai.Client'] = None) -> ParsedTransaction:
+def categorize_transaction(tx: ParsedTransaction, client: Optional['genai.Client'] = None) -> Tuple[ParsedTransaction, CategoryResult]:
     # Detect internal transfer heuristics from descriptions
     # Based on instructions: detect transfers between user's accounts (Access, Kuda, OPay).
     is_internal = False

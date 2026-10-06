@@ -221,11 +221,15 @@ def parse_statement(filepath: str) -> List[ParsedTransaction]:
         if pdf.pages:
             content = pdf.pages[0].extract_text() or ""
 
-    if "Access Bank" in content or "ACCESS BANK" in content or "IBAFO BRANCH" in content or "access" in filepath.lower():
-        return extract_access(filepath)
-    elif "Kuda" in content or "kuda" in filepath.lower():
+    filepath_lower = filepath.lower()
+
+    # All files have Kuda, OPay and Access keywords because of the transfers between them.
+    # Use filename exclusively if it matches the pattern or more reliable text indicators
+    if "kuda" in filepath_lower or "kuda bank" in content.lower():
         return extract_kuda(filepath)
-    elif "OPay" in content or "opay" in filepath.lower():
+    elif "opay" in filepath_lower or "opay wallet" in content.lower():
         return extract_opay(filepath)
+    elif "access" in filepath_lower or "ACCOUNT STATEMENT" in content:
+        return extract_access(filepath)
     else:
-        raise ValueError("Could not determine bank type from PDF.")
+        raise ValueError(f"Could not determine bank type from PDF {filepath}.")
