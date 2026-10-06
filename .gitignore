@@ -3,7 +3,7 @@
 
 # Local Inputs and Exports
 /inputs
-/exports
+/outputs
 
 # Python Cache
 __pycache__/
