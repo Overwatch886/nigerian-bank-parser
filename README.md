@@ -8,7 +8,7 @@ A resilient, headless Python CLI tool designed to parse Nigerian bank statement 
 - **Multiline Normalization**: Reconstructs broken transaction narrations spanning multiple lines.
 - **Data Standardization**: Normalizes amounts to absolute positive floats and formats dates strictly to `YYYY/MM/DD`.
 - **Hybrid Categorization**:
-  - Uses Google GenAI models in order, starting with `gemini-3.5-flash-lite`, then `gemini-3.1-flash-lite`, followed by `gemini-2.5-flash-lite` and `gemini-2.5-flash`.
+  - Uses Google GenAI models in order, starting with `gemini-3.5-flash-lite`, then `gemini-3.1-flash-lite`, followed by Gemma 3 models and `gemini-2.5-flash`.
   - Skips models that are rate-limited for the rest of the run, then gracefully degrades to local regex/keyword rules if every configured model is unavailable.
 - **Inter-account Transfer Detection**: Automatically detects possible transfers between the user's accounts.
 - **Strict Output Format**: Generates an 8-column `.tsv` file matching exactly what Money Manager expects.
@@ -47,7 +47,7 @@ python main.py --input-dir /path/to/statements --output-dir /path/to/export
 The model order can be overridden without changing code:
 
 ```env
-GEMINI_MODELS=gemini-3.5-flash-lite,gemini-3.1-flash-lite,gemini-2.5-flash-lite,gemini-2.5-flash
+GEMINI_MODELS=gemini-3.5-flash-lite,gemini-3.1-flash-lite,gemma-3-27b-it,gemma-3-12b-it,gemma-3-4b-it,gemini-2.5-flash
 ```
 
 These environment settings belong in the `.env` file at the repository root

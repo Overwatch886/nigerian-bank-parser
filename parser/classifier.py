@@ -17,7 +17,9 @@ except ImportError:
 DEFAULT_GEMINI_MODELS = (
     "gemini-3.5-flash-lite",
     "gemini-3.1-flash-lite",
-    "gemini-2.5-flash-lite",
+    "gemma-3-27b-it",
+    "gemma-3-12b-it",
+    "gemma-3-4b-it",
     "gemini-2.5-flash",
 )
 GEMINI_MODELS = tuple(
