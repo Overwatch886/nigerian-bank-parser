@@ -75,6 +75,7 @@ def main():
             print(f"Error processing {path}: {e}")
 
     if all_transactions:
+        os.makedirs(args.output_dir, exist_ok=True)
         output_file = os.path.join(args.output_dir, "money_manager_export.tsv")
         export_to_tsv(all_transactions, output_file)
 
