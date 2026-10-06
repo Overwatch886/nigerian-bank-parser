@@ -1,4 +1,4 @@
-import pytest
+﻿import pytest
 import os
 import csv
 import json
@@ -12,9 +12,9 @@ if GENAI_AVAILABLE:
 from parser.exporter import export_to_tsv
 
 def test_standardize_date():
-    assert _standardize_date("01-AUG-25") == "2025/08/01"
-    assert _standardize_date("01/08/25") == "2025/08/01"
-    assert _standardize_date("2025 Aug 01") == "2025/08/01"
+    assert _standardize_date("01-AUG-25") == "2025-08-01"
+    assert _standardize_date("01/08/25") == "2025-08-01"
+    assert _standardize_date("2025 Aug 01") == "2025-08-01"
 
 def test_multiline_reconstruction(tmp_path):
     # Create a mock PDF extract string and mock pdfplumber to return it
@@ -44,7 +44,7 @@ def test_multiline_reconstruction(tmp_path):
 
     assert len(transactions) == 2
     tx1 = transactions[0]
-    assert tx1.date == "2026/06/25"
+    assert tx1.date == "2026-06-25"
     assert tx1.amount == 5000.0
     assert tx1.type == "Income"
     assert "Adebimpe Folashade gift to olawuyi mobolaji" in tx1.description
@@ -64,10 +64,10 @@ def test_classifier_fallback_mechanism():
     )
 
     tx = ParsedTransaction(
-        date="2025/08/01",
-        account="Access",
+        date="2025-08-01",
+        account="Access Bank account ",
         amount=1000.0,
-        type="Expenses",
+        type="Expense",
         description="UBER TRIP TO LAGOS"
     )
 
@@ -75,8 +75,8 @@ def test_classifier_fallback_mechanism():
     with patch("sys.stderr") as stderr:
         result_tx, cat = categorize_transaction(tx, client=client_mock)
 
-    assert cat.main_category == "Transport"
-    assert result_tx.type == "Expenses"
+    assert cat.main_category == "🚖 Transport"
+    assert result_tx.type == "Expense"
     stderr_output = "".join(call.args[0] for call in stderr.write.call_args_list)
     assert "rate limit" in stderr_output.lower()
 
@@ -88,10 +88,10 @@ def test_classifier_uses_configured_gemini_model():
         sub_category="",
     )
     tx = ParsedTransaction(
-        date="2025/08/01",
-        account="Access",
+        date="2025-08-01",
+        account="Access Bank account ",
         amount=1000.0,
-        type="Expenses",
+        type="Expense",
         description="RESTAURANT PAYMENT",
     )
 
@@ -108,17 +108,17 @@ def test_classifier_rotates_rate_limited_models():
         MagicMock(parsed=CategoryResult(main_category="Food & Dining", sub_category="")),
     ]
     tx = ParsedTransaction(
-        date="2025/08/01",
-        account="Access",
+        date="2025-08-01",
+        account="Access Bank account ",
         amount=1000.0,
-        type="Expenses",
+        type="Expense",
         description="RESTAURANT PAYMENT",
     )
 
     result_tx, cat = categorize_transaction(tx, client=client_mock)
 
-    assert result_tx.type == "Expenses"
-    assert cat.main_category == "Food & Dining"
+    assert result_tx.type == "Expense"
+    assert cat.main_category == "🍜 Food"
     attempted_models = [
         call.kwargs["model"]
         for call in client_mock.models.generate_content.call_args_list
@@ -133,17 +133,17 @@ def test_classifier_rotates_temporarily_unavailable_models():
         MagicMock(parsed=CategoryResult(main_category="Food & Dining", sub_category="")),
     ]
     tx = ParsedTransaction(
-        date="2025/08/01",
-        account="Access",
+        date="2025-08-01",
+        account="Access Bank account ",
         amount=1000.0,
-        type="Expenses",
+        type="Expense",
         description="RESTAURANT PAYMENT",
     )
 
     result_tx, cat = categorize_transaction(tx, client=client_mock)
 
-    assert result_tx.type == "Expenses"
-    assert cat.main_category == "Food & Dining"
+    assert result_tx.type == "Expense"
+    assert cat.main_category == "🍜 Food"
     attempted_models = [
         call.kwargs["model"]
         for call in client_mock.models.generate_content.call_args_list
@@ -152,16 +152,16 @@ def test_classifier_rotates_temporarily_unavailable_models():
 
 def test_classifier_internal_transfer():
     tx = ParsedTransaction(
-        date="2025/08/01",
-        account="Access",
+        date="2025-08-01",
+        account="Access Bank account ",
         amount=50000.0,
-        type="Expenses",
+        type="Expense",
         description="transfer of funds between personal accts olawuyi mobolaji israel"
     )
 
     result_tx, cat = categorize_transaction(tx, client=None)
 
-    assert result_tx.type == "Transfer-Out"
+    assert result_tx.type == "Transfer"
     assert cat.main_category == "Transfer"
 
 def test_classifier_uses_enabled_local_model():
@@ -175,10 +175,10 @@ def test_classifier_uses_enabled_local_model():
         }]
     }).encode("utf-8")
     tx = ParsedTransaction(
-        date="2025/08/01",
-        account="Access",
+        date="2025-08-01",
+        account="Access Bank account ",
         amount=1000.0,
-        type="Expenses",
+        type="Expense",
         description="RESTAURANT PAYMENT",
     )
 
@@ -186,8 +186,8 @@ def test_classifier_uses_enabled_local_model():
             patch.object(classifier.request, "urlopen", return_value=response) as urlopen:
         result_tx, cat = categorize_transaction(tx, client=None)
 
-    assert result_tx.type == "Expenses"
-    assert cat.main_category == "Food & Dining"
+    assert result_tx.type == "Expense"
+    assert cat.main_category == "🍜 Food"
     payload = json.loads(urlopen.call_args.args[0].data.decode("utf-8"))
     assert payload["model"] == classifier.LOCAL_MODEL_NAME
 
@@ -214,10 +214,10 @@ def test_money_manager_format(tmp_path):
     output_path = tmp_path / "output.tsv"
 
     tx = ParsedTransaction(
-        date="2025/08/01",
-        account="Access",
+        date="2025-08-01",
+        account="Access Bank account ",
         amount=3000.0,
-        type="Expenses",
+        type="Expense",
         description="Payment for\n FOOD\t AND \r DRINKS"
     )
     cat = CategoryResult(main_category="Food & Dining", sub_category="")
@@ -233,11 +233,11 @@ def test_money_manager_format(tmp_path):
         assert rows[0] == ["Date", "Account", "Main Category", "Sub Category", "Note", "Amount", "Type", "Description"]
 
         # Check formatting
-        assert rows[1][0] == "2025/08/01"
-        assert rows[1][1] == "Access"
-        assert rows[1][2] == "Food & Dining"
+        assert rows[1][0] == "2025-08-01"
+        assert rows[1][1] == "Access Bank account "
+        assert rows[1][2] == "🍜 Food"
         assert rows[1][3] == ""
         assert rows[1][4] == ""
         assert rows[1][5] == "3000.00"
-        assert rows[1][6] == "Expenses"
+        assert rows[1][6] == "Expense"
         assert rows[1][7] == "Payment for FOOD AND DRINKS" # Cleaned whitespace

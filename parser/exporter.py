@@ -2,7 +2,7 @@ import csv
 import re
 from typing import List, Tuple
 from parser.ingest import ParsedTransaction
-from parser.classifier import CategoryResult
+from parser.classifier import CategoryResult, _normalize_category
 
 def export_to_tsv(transactions: List[Tuple[ParsedTransaction, CategoryResult]], output_path: str):
     headers = [
@@ -21,6 +21,7 @@ def export_to_tsv(transactions: List[Tuple[ParsedTransaction, CategoryResult]], 
         writer.writerow(headers)
 
         for tx, cat in transactions:
+            cat = _normalize_category(cat)
             # Clean description
             # Strip any tabs, carriage returns, or excessive whitespace
             clean_desc = re.sub(r'[\t\r\n]+', ' ', tx.description)

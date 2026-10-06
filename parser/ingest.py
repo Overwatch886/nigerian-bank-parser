@@ -22,7 +22,7 @@ def _parse_amount(text: str) -> Optional[float]:
         return None
 
 def _standardize_date(date_str: str) -> str:
-    # Handle YYYY/MM/DD, DD/MM/YY, DD-MMM-YY, YYYY MMM DD
+    # Handle YYYY/MM/DD, DD/MM/YY, DD-MMM-YY, YYYY MMM DD; export as YYYY-MM-DD.
     date_str = date_str.strip()
     try:
         # 1. 01-AUG-25 (Access)
@@ -37,7 +37,7 @@ def _standardize_date(date_str: str) -> str:
         else:
             # Fallback format or already correct?
             dt = datetime.strptime(date_str, '%Y/%m/%d')
-        return dt.strftime('%Y/%m/%d')
+        return dt.strftime('%Y-%m-%d')
     except ValueError:
         return date_str # Return as is if format isn't recognized
 
@@ -73,11 +73,11 @@ def extract_access(filepath: str) -> List[ParsedTransaction]:
                 elif amount is None:
                     continue
 
-                tx_type = "Expenses" if debit != '-' else "Income"
+                tx_type = "Expense" if debit != '-' else "Income"
 
                 current_tx = ParsedTransaction(
                     date=_standardize_date(posted_date),
-                    account="Access",
+                    account="Access Bank account ",
                     amount=amount,
                     type=tx_type,
                     description=description.strip()
@@ -134,7 +134,7 @@ def extract_kuda(filepath: str) -> List[ParsedTransaction]:
                 if amount_match:
                     amount = _parse_amount(amount_match.group(1))
 
-                    tx_type = "Expenses" if "outward" in rest_of_line.lower() else "Income"
+                    tx_type = "Expense" if "outward" in rest_of_line.lower() else "Income"
 
                     description = rest_of_line.replace(amount_match.group(1), '').strip()
 
@@ -154,7 +154,7 @@ def extract_kuda(filepath: str) -> List[ParsedTransaction]:
 
                     current_tx = ParsedTransaction(
                         date=_standardize_date(date_str),
-                        account="Kuda",
+                        account="Kuda Bank Account",
                         amount=amount,
                         type=tx_type,
                         description=description.strip()
@@ -196,11 +196,11 @@ def extract_opay(filepath: str) -> List[ParsedTransaction]:
                 trans_date, time, value_date, description, amount_str, balance, rest = match.groups()
 
                 amount = _parse_amount(amount_str)
-                tx_type = "Income" if amount_str.startswith('+') else "Expenses"
+                tx_type = "Income" if amount_str.startswith('+') else "Expense"
 
                 current_tx = ParsedTransaction(
                     date=_standardize_date(trans_date),
-                    account="OPay",
+                    account="My Personal Opay Account",
                     amount=amount,
                     type=tx_type,
                     description=description.strip() + " " + rest.strip()

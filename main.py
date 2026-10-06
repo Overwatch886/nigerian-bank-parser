@@ -65,7 +65,7 @@ def main():
                 all_transactions.append((tx, cat_result))
 
                 total_tx += 1
-                if tx.type == "Expenses":
+                if tx.type == "Expense":
                     total_debits += tx.amount
                 elif tx.type == "Income":
                     total_credits += tx.amount

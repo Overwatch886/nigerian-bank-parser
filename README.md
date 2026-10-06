@@ -6,9 +6,11 @@ A resilient, headless Python CLI tool designed to parse Nigerian bank statement 
 
 - **PDF Data Extraction**: Uses `pdfplumber` to accurately read PDF statements.
 - **Multiline Normalization**: Reconstructs broken transaction narrations spanning multiple lines.
-- **Data Standardization**: Normalizes amounts to absolute positive floats and formats dates strictly to `YYYY/MM/DD`.
+- **Data Standardization**: Normalizes amounts to absolute positive floats and formats dates strictly to `YYYY-MM-DD`.
+- **Money Manager conventions**: Exports dates as `YYYY-MM-DD`, uses `Income`/`Expense`, and normalizes accounts to the configured Money Manager names.
 - **Hybrid Categorization**:
   - Uses Google GenAI models in order, starting with `gemini-3.5-flash-lite`, then `gemini-3.1-flash-lite`, followed by Gemma 3 models and `gemini-2.5-flash`.
+  - Uses workbook-compatible categories such as `🍜 Food`, `🚖 Transport`, `Airtime Expense`, and `Taxes, Fees and Levies`.
   - Skips models that are rate-limited for the rest of the run, then gracefully degrades to local regex/keyword rules if every configured model is unavailable.
 - **Inter-account Transfer Detection**: Automatically detects possible transfers between the user's accounts.
 - **Strict Output Format**: Generates an 8-column `.tsv` file matching exactly what Money Manager expects.
@@ -74,6 +76,11 @@ falls back to regex rules.
 ### Output
 The tool produces a tab-separated values (`.tsv`) file with the following headers:
 `Date`, `Account`, `Main Category`, `Sub Category`, `Note`, `Amount`, `Type`, `Description`.
+
+Account names are `Access Bank account `, `Kuda Bank Account`, and
+`My Personal Opay Account`. Transfers identified as movements between these
+accounts are exported as `Transfer` with subcategory `Internal`, rather than
+being treated as ordinary income or expenses.
 
 ## Development and Testing
 

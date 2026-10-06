@@ -32,6 +32,13 @@ GEMINI_MODELS = tuple(
     if model.strip()
 )
 GEMINI_MODEL = GEMINI_MODELS[0]
+WORKBOOK_CATEGORIES = (
+    "Airtime Expense", "Cash", "Debt Payments", "Donations", "Gifts",
+    "Investments", "Loans", "Other", "Sale Of Assets", "Shopping",
+    "Subscriptions", "Taxes, Fees and Levies", "🍜 Food", "🎁 Gift",
+    "🏅 Bonus", "💰 Salary", "📙 Education", "🚖 Transport", "🤑 Allowance",
+    "🧘🏼 Health", "🧥 Apparel", "🪑 Household",
+)
 LOCAL_MODEL_ENABLED = os.environ.get("LOCAL_MODEL_ENABLED", "").lower() in ("1", "true", "yes", "on")
 LOCAL_MODEL_ENDPOINT = os.environ.get(
     "LOCAL_MODEL_ENDPOINT",
@@ -63,8 +70,23 @@ def fallback_categorize(description: str) -> CategoryResult:
     desc_upper = description.upper()
     for pattern, main_cat, sub_cat in CATEGORY_RULES:
         if re.search(pattern, desc_upper):
-            return CategoryResult(main_category=main_cat, sub_category=sub_cat)
-    return CategoryResult(main_category="Uncategorized", sub_category="")
+            return _normalize_category(CategoryResult(main_category=main_cat, sub_category=sub_cat))
+    return CategoryResult(main_category="Other", sub_category="")
+
+def _normalize_category(result: CategoryResult) -> CategoryResult:
+    aliases = {
+        "Transport": "🚖 Transport",
+        "Food & Dining": "🍜 Food",
+        "Groceries": "Other",
+        "Utilities & Airtime": "Airtime Expense",
+        "Bank Charges": "Taxes, Fees and Levies",
+        "Income": "💰 Salary",
+        "Uncategorized": "Other",
+    }
+    return CategoryResult(
+        main_category=aliases.get(result.main_category, result.main_category),
+        sub_category=result.sub_category,
+    )
 
 def _is_model_unavailable_error(exc: Exception) -> bool:
     status_code = getattr(exc, "status_code", None) or getattr(exc, "code", None)
@@ -153,8 +175,7 @@ def ensure_local_model_running() -> bool:
 def _local_model_prompt(tx: ParsedTransaction) -> str:
     return f"""
 Categorize this Nigerian bank transaction into exactly one main category.
-Use only one of: Transport, Utilities & Airtime, Food & Dining, Groceries,
-Bank Charges, Shopping, Health, Entertainment, Income, Transfer, or Uncategorized.
+Use only one of: {", ".join(WORKBOOK_CATEGORIES)}.
 Return only valid JSON with this shape: {{"main_category": "...", "sub_category": "..."}}.
 Description: {tx.description}
 Amount: {tx.amount}
@@ -191,7 +212,7 @@ def _categorize_with_local_model(tx: ParsedTransaction) -> Optional[CategoryResu
         content = content.strip()
         if content.startswith("```"):
             content = re.sub(r"^```(?:json)?\s*|\s*```$", "", content, flags=re.IGNORECASE)
-        return CategoryResult.model_validate_json(content)
+        return _normalize_category(CategoryResult.model_validate_json(content))
     except Exception as exc:
         _LOCAL_MODEL_UNAVAILABLE = True
         print(
@@ -217,7 +238,7 @@ def categorize_transaction(tx: ParsedTransaction, client: Optional['genai.Client
              is_internal = True
 
     if is_internal:
-        tx.type = "Transfer-Out"
+        tx.type = "Transfer"
         tx_category = CategoryResult(main_category="Transfer", sub_category="Internal")
         return tx, tx_category
 
@@ -248,7 +269,7 @@ def categorize_transaction(tx: ParsedTransaction, client: Optional['genai.Client
                 cat_result = response.parsed
                 if not cat_result:
                     cat_result = fallback_categorize(tx.description)
-                return tx, cat_result
+                return tx, _normalize_category(cat_result)
             except Exception as e:
                 if not _is_model_unavailable_error(e):
                     print(
