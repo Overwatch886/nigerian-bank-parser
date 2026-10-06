@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from parser.ingest import parse_statement
-from parser.classifier import categorize_transaction, ensure_local_model_running, GENAI_AVAILABLE
+from parser.classifier import categorize_transaction, GENAI_AVAILABLE
 from parser.exporter import export_to_tsv
 
 if GENAI_AVAILABLE:
@@ -46,8 +46,6 @@ def main():
     elif not api_key:
         print("No API key provided. Defaulting to local regex rules.")
 
-    ensure_local_model_running()
-
     all_transactions = []
 
     total_files = len(input_paths)
@@ -65,7 +63,7 @@ def main():
                 all_transactions.append((tx, cat_result))
 
                 total_tx += 1
-                if tx.type == "Expense":
+                if tx.type == "Expenses":
                     total_debits += tx.amount
                 elif tx.type == "Income":
                     total_credits += tx.amount
