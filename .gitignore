@@ -1,2 +1,6 @@
 # Environment Variables
 *.env
+
+# Local Inputs and Exports
+/inputs
+/exports
